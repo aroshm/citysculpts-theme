@@ -1,0 +1,944 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_KRpBBn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_G8t9dN": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Aouth America</strong>",
+            "text": "<p>Asuncion</p><p>Belo Horizonte</p><p>Bogota</p><p>Brazilia</p><p>Buenos Aires</p><p>Cali</p><p>Caracas</p><p>Curitiba</p><p>Fortaleza</p><p>Guayaquil</p><p>La Paz</p><p>Lima</p><p>Medellin</p><p>Mexico City</p><p>Montevideo</p><p>Recif</p><p>Rio de Janeiro</p><p>Salvador</p><p>Santiago</p><p>Sao Paulo</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cEVgaH": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>North America</strong>",
+            "text": "<p>Boston</p><p>Chicago</p><p>Calgary</p><p>Cancun</p><p>Dallas</p><p>Guadalajara</p><p>Houston</p><p>Los Angeles</p><p>Miami</p><p>Mexico City</p><p>Monterey</p><p>Montreal</p><p>New York City</p><p>Philadelphia</p><p>Quebec City</p><p>San Francisco</p><p>Seattle</p><p>San Diego</p><p>Toronto</p><p>Vancouver</p><p></p><p></p><p></p><p></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qkFt7i": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Eourop</strong>",
+            "text": "<p>Amsterdam</p><p>Athens</p><p>Barselona</p><p>Belgrade</p><p>Berlin</p><p>Brussels</p><p>Budapest</p><p>Copenhagen</p><p>Dublin</p><p>Helsinki</p><p>Istanbul</p><p>Lisabon</p><p>London</p><p>Madrid</p><p>Milan</p><p>Moscow</p><p>Munich</p><p>Oslo</p><p>Paris</p><p>Prague</p><p>Rome</p><p>Stockholm</p><p>Vienna</p><p>Warsaw</p><p>Rome</p><p>Zurich</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jYBRCx": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Middle East</strong>",
+            "text": "<p>Abu Dhabi</p><p>Aden</p><p>Aleppo</p><p>Amman</p><p>Baghdad</p><p>Basra</p><p>Beirut</p><p>Cairo</p><p>Damascus</p><p>Doha </p><p>Dubai</p><p>Erbil</p><p>Gaziantep</p><p>Isfahan</p><p>Jeddah</p><p>Jerusalem</p><p>Kuwait city</p><p>Manama</p><p>Mashhad</p><p>Mecca</p><p>Madina</p><p>Muscat</p><p>Riyadh</p><p>Sana'a</p><p>Tehran</p><p>Tel Aviv</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JqhpbM": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Aouth America</strong>",
+            "text": "<p>Asuncion</p><p>Belo Horizonte</p><p>Bogota</p><p>Brazilia</p><p>Buenos Aires</p><p>Cali</p><p>Caracas</p><p>Curitiba</p><p>Fortaleza</p><p>Guayaquil</p><p>La Paz</p><p>Lima</p><p>Medellin</p><p>Mexico City</p><p>Montevideo</p><p>Recif</p><p>Rio de Janeiro</p><p>Salvador</p><p>Santiago</p><p>Sao Paulo</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_G8t9dN",
+        "column_cEVgaH",
+        "column_qkFt7i",
+        "column_jYBRCx",
+        "column_JqhpbM"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_EEwBCP": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_hwRiGR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Story: A Family’s Journey Through the World’s Wonders",
+            "heading_size": "h1"
+          }
+        },
+        "text_RHAHt9": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hwRiGR",
+        "text_RHAHt9"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/our_story_026fea86-412e-4fe4-a66c-78e19c76fbd0.png",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "custom_liquid_T6brey": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "OUR DIFFERENCE\nMaking behavior change simple,  beautiful and accessible.",
+        "color_scheme": "",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "multirow_r3MpqY": {
+      "type": "multirow",
+      "blocks": {
+        "row_rK6Jye": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "caption": "",
+            "heading": "A family united by wanderlust",
+            "text": "<p>At City Sculp, our love for exploration and creativity shapes who we are. As passionate travelers, we treasure discovering vibrant cities and peaceful landscapes, each journey inspiring our lives and our work.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_NYw6rd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "caption": "",
+            "heading": "Capturing the essence of cities",
+            "text": "<p>With a sharp eye for detail, we capture each city’s unique charm and character. Blending exploration with artistic expression, we create pieces that share our sense of wonder with adventurers and art lovers alike.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_FbFM6G": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "caption": "",
+            "heading": "Transforming memories into art",
+            "text": "<p>We transform our travels into tangible art, sharing the joy of discovery and the beauty of cities worldwide. Join us on this journey and bring a piece of our adventures into your space.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_rK6Jye",
+        "row_NYw6rd",
+        "row_FbFM6G"
+      ],
+      "disabled": true,
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "small",
+        "desktop_image_width": "small",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "subtitle",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_DWbpjJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_i6hQEn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Embracing the journey ahead",
+            "heading_size": "h1"
+          }
+        },
+        "text_tqYyKi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Knowing time is fleeting, we embrace every journey and creation. Each project reflects our passion for exploring, crafting, and sharing the world’s beauty one city at a time.<br/><br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_i6hQEn",
+        "text_tqYyKi"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/5.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_cCbhr7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_J9Bik3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Premium doesn't mean wasteful. We use natural, recycled, and compostable materials to protect our shared home.",
+            "heading_size": "h1"
+          }
+        },
+        "text_8dC7gp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_4rmMxz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_J9Bik3",
+        "text_8dC7gp",
+        "button_4rmMxz"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_K846Dm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JMj4gP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/7.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_czjcJh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/8.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XQL7Px": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_p9NjNx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/20.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JMj4gP",
+        "column_czjcJh",
+        "column_XQL7Px",
+        "column_p9NjNx"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Premium doesn't mean wasteful. We use natural, recycled, and compostable materials to protect our shared home.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "See Our Impact",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 16
+      }
+    },
+    "image_with_text_qNMh8a": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RYmgie": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR MISSION",
+            "heading_size": "h2"
+          }
+        },
+        "text_G4RrMM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are on a mission to help 1% of the global population create a positive change in their lives. This is only the beginning.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_zPmzbr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_RYmgie",
+        "text_G4RrMM",
+        "button_zPmzbr"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/19.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_hLiF9p": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_h699ii": {
+          "type": "heading",
+          "settings": {
+            "heading": "It's time to unleash your full potential. It's time to be part of—Intelligent Change.",
+            "heading_size": "h2"
+          }
+        },
+        "text_VV8XNf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Now is the perfect time to start living a more mindful, fulfilling life. Make the time to look after yourself, change the way you think and take notice as the world reflects those changes right back at you.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_66cbKR": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_h699ii",
+        "text_VV8XNf",
+        "button_66cbKR"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/18.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_t6wtbg": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "new-in",
+        "products_to_show": 4,
+        "title": "Bestsellers Worldwide",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_bPTEHh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UUMWmE": {
+          "type": "heading",
+          "settings": {
+            "heading": "“The art of peaceful living comes down to living compassionately and wisely.\"",
+            "heading_size": "h1"
+          }
+        },
+        "text_FEAxdj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ALLAN LOKOS<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UUMWmE",
+        "text_FEAxdj"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_hJ8mTX": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_wMhUeT": {
+          "type": "heading",
+          "settings": {
+            "heading": "FREE GIFT WITH PURCHASE                         ($ 30 VALUE)",
+            "heading_size": "h2"
+          }
+        },
+        "buttons_ygBJyt": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "ALL COLLECTIONS",
+            "button_link_2": "shopify://collections",
+            "button_style_secondary_2": true
+          }
+        },
+        "text_FNckD4": {
+          "type": "text",
+          "settings": {
+            "text": "Shape your tomorrow with tools designed for gratitude, productivity, mindfulness, connection, and self-care.",
+            "text_style": "caption-with-letter-spacing"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wMhUeT",
+        "buttons_ygBJyt",
+        "text_FNckD4"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/image_3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "custom_body_menu_n4Cdb9": {
+      "type": "custom_body_menu",
+      "blocks": {
+        "menu_block_R7qkpX": {
+          "type": "menu_block",
+          "settings": {
+            "menu": "shop-all-menu"
+          }
+        }
+      },
+      "block_order": [
+        "menu_block_R7qkpX"
+      ],
+      "name": "Custom Menus",
+      "settings": {}
+    },
+    "rich_text_gFJnac": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VAYDxM": {
+          "type": "heading",
+          "settings": {
+            "heading": "<a href=\"/collections/cube\" title=\"Cube\">CITY CUBE</a> <a href=\"/collections/lights\" title=\"Lights\">LIGHTS</a> <a href=\"/collections/bundle\" title=\"Bundle\">BUNDLES</a> <a href=\"/collections/frame\" title=\"Frame\">FRAMES</a>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VAYDxM"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_kXhNBH": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "frames",
+        "products_to_show": 4,
+        "title": "Our products",
+        "heading_size": "h1",
+        "description": "<p>Crafted with care to bring beauty, detail, and meaning into every space.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "featured_collection_JhYCyi": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "bestsellers",
+        "products_to_show": 9,
+        "title": "City Sculpts",
+        "heading_size": "h1",
+        "description": "<p>Urban inspiration transformed into bold, elegant forms for your space.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_k8GtAH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EpTdgm": {
+          "type": "heading",
+          "settings": {
+            "heading": "The CITYFRAME that I bought vas a gift and the person who received it was literally astonished and positively impressed by the originality of this item. It was a n excellent purchase!",
+            "heading_size": "h1"
+          }
+        },
+        "text_WP6rCm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ALLAN LOKOS<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EpTdgm",
+        "text_WP6rCm"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_zJE8JP": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "lights",
+        "products_to_show": 4,
+        "title": "Our lights",
+        "heading_size": "h1",
+        "description": "<p>Designed to illuminate and inspire, our lights blend function with striking design to brighten any space.<br/><br/></p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "featured_collection_Yz3JP7": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "the-bundle-creator",
+        "products_to_show": 7,
+        "title": "The bundle creator",
+        "heading_size": "h1",
+        "description": "<p>Create your perfect bundle in seconds. Mix and match your favorite items and enjoy instant savings.<br/><br/></p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_QiX4wG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Wpdab6": {
+          "type": "heading",
+          "settings": {
+            "heading": "CITYSCULPS lets you collect your favorite cityscapes and place them on your wall to become part of your living room or bedroom decor.",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Wpdab6"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 4
+      }
+    },
+    "multicolumn_QpwViE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_pi8cqL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_EVAD7h": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XBiMNp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wKXVAa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/image_24.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_pi8cqL",
+        "column_EVAD7h",
+        "column_XBiMNp",
+        "column_wKXVAa"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_XxPmC3": {
+      "type": "multicolumn",
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Learn More About Cityscapes",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_gU37FV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nVDjcY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Let customer speak for us",
+            "heading_size": "h1"
+          }
+        },
+        "text_chzbB4": {
+          "type": "text",
+          "settings": {
+            "text": "<p> See what our customers have to say and discover why they love us.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nVDjcY",
+        "text_chzbB4"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "1756238057d2f91583": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_homepage_crdnep": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "",
+            "review_data": "no_reviews",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_homepage_crdnep"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_KRpBBn",
+    "image_banner_EEwBCP",
+    "custom_liquid_T6brey",
+    "multirow_r3MpqY",
+    "image_with_text_DWbpjJ",
+    "rich_text_cCbhr7",
+    "multicolumn_K846Dm",
+    "image_with_text_qNMh8a",
+    "image_with_text_hLiF9p",
+    "featured_collection_t6wtbg",
+    "rich_text_bPTEHh",
+    "image_banner_hJ8mTX",
+    "custom_body_menu_n4Cdb9",
+    "rich_text_gFJnac",
+    "featured_collection_kXhNBH",
+    "featured_collection_JhYCyi",
+    "rich_text_k8GtAH",
+    "featured_collection_zJE8JP",
+    "featured_collection_Yz3JP7",
+    "rich_text_QiX4wG",
+    "multicolumn_QpwViE",
+    "multicolumn_XxPmC3",
+    "rich_text_gU37FV",
+    "1756238057d2f91583"
+  ]
+}

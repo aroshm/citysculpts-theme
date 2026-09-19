@@ -1,0 +1,726 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "multicolumn_KRpBBn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_G8t9dN": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Aouth America</strong>",
+            "text": "<p>Asuncion</p><p>Belo Horizonte</p><p>Bogota</p><p>Brazilia</p><p>Buenos Aires</p><p>Cali</p><p>Caracas</p><p>Curitiba</p><p>Fortaleza</p><p>Guayaquil</p><p>La Paz</p><p>Lima</p><p>Medellin</p><p>Mexico City</p><p>Montevideo</p><p>Recif</p><p>Rio de Janeiro</p><p>Salvador</p><p>Santiago</p><p>Sao Paulo</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cEVgaH": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>North America</strong>",
+            "text": "<p>Boston</p><p>Chicago</p><p>Calgary</p><p>Cancun</p><p>Dallas</p><p>Guadalajara</p><p>Houston</p><p>Los Angeles</p><p>Miami</p><p>Mexico City</p><p>Monterey</p><p>Montreal</p><p>New York City</p><p>Philadelphia</p><p>Quebec City</p><p>San Francisco</p><p>Seattle</p><p>San Diego</p><p>Toronto</p><p>Vancouver</p><p></p><p></p><p></p><p></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qkFt7i": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Eourop</strong>",
+            "text": "<p>Amsterdam</p><p>Athens</p><p>Barselona</p><p>Belgrade</p><p>Berlin</p><p>Brussels</p><p>Budapest</p><p>Copenhagen</p><p>Dublin</p><p>Helsinki</p><p>Istanbul</p><p>Lisabon</p><p>London</p><p>Madrid</p><p>Milan</p><p>Moscow</p><p>Munich</p><p>Oslo</p><p>Paris</p><p>Prague</p><p>Rome</p><p>Stockholm</p><p>Vienna</p><p>Warsaw</p><p>Rome</p><p>Zurich</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jYBRCx": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Middle East</strong>",
+            "text": "<p>Abu Dhabi</p><p>Aden</p><p>Aleppo</p><p>Amman</p><p>Baghdad</p><p>Basra</p><p>Beirut</p><p>Cairo</p><p>Damascus</p><p>Doha </p><p>Dubai</p><p>Erbil</p><p>Gaziantep</p><p>Isfahan</p><p>Jeddah</p><p>Jerusalem</p><p>Kuwait city</p><p>Manama</p><p>Mashhad</p><p>Mecca</p><p>Madina</p><p>Muscat</p><p>Riyadh</p><p>Sana'a</p><p>Tehran</p><p>Tel Aviv</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JqhpbM": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Aouth America</strong>",
+            "text": "<p>Asuncion</p><p>Belo Horizonte</p><p>Bogota</p><p>Brazilia</p><p>Buenos Aires</p><p>Cali</p><p>Caracas</p><p>Curitiba</p><p>Fortaleza</p><p>Guayaquil</p><p>La Paz</p><p>Lima</p><p>Medellin</p><p>Mexico City</p><p>Montevideo</p><p>Recif</p><p>Rio de Janeiro</p><p>Salvador</p><p>Santiago</p><p>Sao Paulo</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_G8t9dN",
+        "column_cEVgaH",
+        "column_qkFt7i",
+        "column_jYBRCx",
+        "column_JqhpbM"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_EEwBCP": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_hwRiGR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Story: A Family’s Journey Through the World’s Wonders",
+            "heading_size": "h1"
+          }
+        },
+        "text_RHAHt9": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hwRiGR",
+        "text_RHAHt9"
+      ],
+      "custom_css": [
+        ".banner {margin-bottom: 40px;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/our_story_026fea86-412e-4fe4-a66c-78e19c76fbd0.png",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "newsletter_fHfQHd": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_RQpwPq": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR PHILOSOPHY",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_kfxeUQ": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<h3>We create elevated, thoughtfully designed cities that you love. Our City Sculps are beautifully designed by choosing the are you love.</h3>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RQpwPq",
+        "paragraph_kfxeUQ"
+      ],
+      "custom_css": [],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_fExMqc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_KdBgjg": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_aN8mQU": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "button_F9b69f": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KdBgjg",
+        "text_aN8mQU",
+        "button_F9b69f"
+      ],
+      "custom_css": [
+        ".image-with-text__media {padding: 0 !important;}",
+        ".image-with-text__media img {max-width: 700px !important;}",
+        ".image-with-text {padding-bottom: 0 !important;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/image_2.png",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 240
+      }
+    },
+    "multicolumn_BBi9UL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qzbiaB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/image_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_qzbiaB"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "newsletter_43Pc8p": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_zUEt4J": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR DIFFERENCE",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_fUczhU": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<h3>Making behavior change simple,  beautiful and accessible.</h3>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zUEt4J",
+        "paragraph_fUczhU"
+      ],
+      "custom_css": [
+        ".newsletter__subheading {max-width: 810px;}"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 60
+      }
+    },
+    "multirow_jdVfRb": {
+      "type": "multirow",
+      "blocks": {
+        "row_xijWPF": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Images.jpg",
+            "caption": "",
+            "heading": "A family united by wanderlust",
+            "text": "<p>At City Sculp, our love for exploration and creativity shapes who we are. As passionate travelers, we treasure discovering vibrant cities and peaceful landscapes, each journey inspiring our lives and our work.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_fGcC7h": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Images_1.jpg",
+            "caption": "",
+            "heading": "Capturing the essence of cities",
+            "text": "<p>With a sharp eye for detail, we capture each city’s unique charm and character. Blending exploration with artistic expression, we create pieces that share our sense of wonder with adventurers and art lovers alike.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_z6hEiz": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/image_16.jpg",
+            "caption": "",
+            "heading": "Transforming memories into art",
+            "text": "<p>We transform our travels into tangible art, sharing the joy of discovery and the beauty of cities worldwide. Join us on this journey and bring a piece of our adventures into your space.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_Na3W7b": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Images_2.jpg",
+            "caption": "",
+            "heading": "Embracing the journey ahead",
+            "text": "<p>Knowing time is fleeting, we embrace every journey and creation. Each project reflects our passion for exploring, crafting, and sharing the world’s beauty one city at a time.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_xijWPF",
+        "row_fGcC7h",
+        "row_z6hEiz",
+        "row_Na3W7b"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-right",
+        "heading_size": "h1",
+        "text_style": "subtitle",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_cCbhr7": {
+      "type": "rich-text",
+      "blocks": {
+        "text_8dC7gp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Premium doesn't mean wasteful. We use natural, recycled, and compostable materials to protect our shared home.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_8dC7gp"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 813px;}",
+        ".rich-text h2 {font-family: \"Euclid-medium\"; font-size: 12px; text-transform: uppercase;}",
+        ".rich-text p {font-family: \"Canela-regular\"; font-size: 25px; line-height: 1.5;}",
+        "@media (min-width: 768px) {.rich-text p {font-size: 35px; }}",
+        "@media (min-width: 1200px) {.rich-text p {font-size: 43px; letter-spacing: 1.9px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 88,
+        "padding_bottom": 100
+      }
+    },
+    "multicolumn_K846Dm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JMj4gP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Frame_40.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_czjcJh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Frame_41.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XQL7Px": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Frame_42.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_p9NjNx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Frame_43.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JMj4gP",
+        "column_czjcJh",
+        "column_XQL7Px",
+        "column_p9NjNx"
+      ],
+      "custom_css": [
+        "@media (min-width: 1200px) {.page-width {max-width: 1110px; }}",
+        "@media (max-width: 1199px) {.multicolumn-list__item.center .media--adapt img {transform: translate(-50%) scale(0.9); }}",
+        ".button.animate-arrow {width: 236px;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "SEE OUR IMPACT",
+        "button_link": "shopify://collections/all",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 92
+      }
+    },
+    "image_with_text_qNMh8a": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RYmgie": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR MISSION",
+            "heading_size": "h2"
+          }
+        },
+        "text_G4RrMM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are on a mission to help 1% of the global population create a positive change in their lives. This is only the beginning.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_zPmzbr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/our-mission",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_RYmgie",
+        "text_G4RrMM",
+        "button_zPmzbr"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/image_5.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "our_mission_dWwdBx": {
+      "type": "our-mission",
+      "custom_css": [
+        ".button.animate-arrow {width: 147px;}"
+      ],
+      "name": "Custom Our Misson",
+      "settings": {
+        "subtitle": "We are on a mission to help 1% of the global population create a positive change in their lives. This is only the beginning.",
+        "heading": "Our Mission",
+        "button_text": "Learn more",
+        "button_link": "shopify://pages/our-mission",
+        "button_background": "#000000",
+        "button_color": "#ffffff",
+        "right_image": "shopify://shop_images/Rectangle_16.jpg",
+        "color_scheme": "scheme-2"
+      }
+    },
+    "image_with_text_hLiF9p": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_h699ii": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h2"
+          }
+        },
+        "text_VV8XNf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Now is the perfect time to start living a more <em>mindful, fulfilling life.</em> Make the time to look after yourself, change the way you think and take notice as the world reflects those changes right back at you.</p><ul><li>It's time to unleash your <em>full potential.</em></li><li>It's time to be part of—Intelligent Change.<br/></li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button_66cbKR": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_h699ii",
+        "text_VV8XNf",
+        "button_66cbKR"
+      ],
+      "custom_css": [
+        ".image-with-text__content {max-width: unset; padding: 0;}",
+        ".image-with-text__text {margin-top: 0 !important;}",
+        ".image-with-text__text ul {list-style: none; margin-top: 42px; padding-left: 65px;}",
+        ".image-with-text__text p,.image-with-text__text li {font-family: \"Canela-light\"; font-size: 23px; line-height: 1.4;}",
+        ".image-with-text__media {padding-bottom: 0 !important;}",
+        "@media (min-width: 1200px) {.image-with-text__text p {padding-right: 60px; } .image-with-text__text p, .image-with-text__text li {font-size: 30px; }}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/image_16_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 92,
+        "padding_bottom": 92
+      }
+    },
+    "featured_collection_t6wtbg": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "new-in",
+        "products_to_show": 4,
+        "title": "Bestsellers Worldwide",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_B7WW9m": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BVNUMR": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_dWxByN": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LJreHT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Frame_a7e5de03-e5c5-465f-b405-3e5546aae968.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BVNUMR",
+        "column_dWxByN",
+        "column_LJreHT"
+      ],
+      "custom_css": [
+        ".multicolumn-list__item.center .media--adapt img {height: auto; width: 77px;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 64,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_bPTEHh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UUMWmE": {
+          "type": "heading",
+          "settings": {
+            "heading": "“The art of peaceful living comes down to living compassionately and wisely.\"",
+            "heading_size": "h1"
+          }
+        },
+        "text_FEAxdj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ALLAN LOKOS<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UUMWmE",
+        "text_FEAxdj"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset;}",
+        ".rich-text__text {margin-top: 48px;}",
+        ".rich-text__text p {font-family: \"Euclid-medium\"; font-size: 12px; letter-spacing: 1.3px;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {.rich-text__blocks {max-width: 780px; } h2 {font-size: 43px; letter-spacing: 2.3px; line-height: 1.4; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 92
+      }
+    }
+  },
+  "order": [
+    "multicolumn_KRpBBn",
+    "main",
+    "image_banner_EEwBCP",
+    "newsletter_fHfQHd",
+    "image_with_text_fExMqc",
+    "multicolumn_BBi9UL",
+    "newsletter_43Pc8p",
+    "multirow_jdVfRb",
+    "rich_text_cCbhr7",
+    "multicolumn_K846Dm",
+    "image_with_text_qNMh8a",
+    "our_mission_dWwdBx",
+    "image_with_text_hLiF9p",
+    "featured_collection_t6wtbg",
+    "multicolumn_B7WW9m",
+    "rich_text_bPTEHh"
+  ]
+}

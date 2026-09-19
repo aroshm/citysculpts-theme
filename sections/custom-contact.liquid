@@ -1,0 +1,372 @@
+{% comment %}
+  Custom Form Section
+  Converted from custom-liquid block to a proper Shopify section
+{% endcomment %}
+
+{% style %}
+  /* ===== Custom Form Styles ===== */
+
+.custom-form-wrapper {
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 43px 63px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  .custom-form-wrapper {
+  max-width: 918px;
+  }
+}
+
+.custom-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 30px;
+}
+
+.custom-form-grid .full-width {
+  grid-column: 1 / -1;
+}
+
+.custom-form-wrapper label {
+  font-family: 'Euclid-regular';
+  font-weight: unset;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 6px;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.custom-form-wrapper input[type="text"],
+.custom-form-wrapper input[type="email"],
+.custom-form-wrapper input[type="tel"],
+.custom-form-wrapper select,
+.custom-form-wrapper input[type="file"],
+.custom-form-wrapper input[type="number"] {
+  background-color: #F3F2EE;
+  font-family: 'Euclid-regular';
+  font-weight: unset;
+  width: 100%;
+  padding: 15px 14px;
+  border: 0 none;
+  border-radius: 0;
+  font-size: 14px;
+  transition: border-color 0.25s ease;
+  box-sizing: border-box;
+}
+
+.custom-form-wrapper input:focus,
+.custom-form-wrapper select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.custom-form-wrapper select {
+  background-image: url(https://cdn.shopify.com/s/files/1/0923/2059/6310/files/caret.svg?v=1758115274);
+  background-position: 95% 17px;
+  background-repeat: no-repeat;
+  appearance: none;
+  cursor: pointer;
+}
+
+.file-upload-wrapper {
+  background-color: #F3F2EE;
+  border: 2px dashed #ccc;
+  padding: 35px;
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  border-radius: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.file-upload-wrapper:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.file-upload-wrapper input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.file-upload-hint {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.custom-form-submit {
+  margin-top: 28px;
+  background-color: #007bff;
+  color: white;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-form-submit:hover {
+  background-color: #0056b3;
+}
+
+.custom-form-wrapper hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 7px 0 3px 0;
+}
+
+@media (max-width: 767px) {
+  .custom-form-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.custom-form-wrapper h2 {
+  font-family: 'Canela-regular';
+  font-size: 32px;
+  font-weight: unset;
+  margin: 0 auto 54px;
+  max-width: 512px;
+  text-align: center;
+}
+
+.custom-upload-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.custom-upload-wrapper > div {
+  width: 230px;
+}
+
+.custom-upload-wrapper > div p {
+  font-size: 14px;
+  margin: 0;
+ text-align: left;
+ text-transform: initial;
+}
+
+.upload-title {
+  font-family: 'Euclid-medium';
+  margin-bottom: 4px;
+}
+
+.upload-subtitle {
+  line-height: 1.2;
+}
+
+.custom-form-wrapper .button {
+    background-color: black;
+    color: white;
+    margin-top: 24px;
+    padding-inline: 0;
+    
+      width: 100%;
+
+}
+.custom-form-wrapper .button .svg-wrapper {
+    left: 10px;
+position: relative;
+    top: 0;
+    transform: translateY(0);
+}
+.custom-form-wrapper .button .svg-wrapper svg path {
+  fill: white;
+}
+
+.custom-form-wrapper h3 {
+  font-family: "Canela-regular";
+  font-size: 24px;
+  font-weight: unset;
+  margin: 0 0 24px;
+}
+{% endstyle %}
+
+<section class="custom-form-section">
+  <div class="custom-form-wrapper">
+    <h2>{{ section.settings.form_title }}</h2>
+    {%- form 'contact', id: 'customCityForm', class: custom-city-form -%}
+      <h3>Your Address</h3>
+      <div class="custom-form-grid">
+
+        <!-- First Name -->
+        <div>
+          <label for="first_name">{{- 'user.svg' | inline_asset_content -}}First Name *</label>
+          <input type="text" id="first_name" name="first_name" required placeholder="Rehan">
+        </div>
+
+        <!-- Last Name -->
+        <div>
+          <label for="last_name">{{- 'user.svg' | inline_asset_content -}}Last Name *</label>
+          <input type="text" id="last_name" name="last_name" required placeholder="Yaseen">
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email">{{- 'mail-01.svg' | inline_asset_content -}}Email *</label>
+          <input type="email" id="email" name="_replyto" required placeholder="user123@gmail.com">
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label for="phone">{{- 'call-02.svg' | inline_asset_content -}}Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="+1 123 238 488" pattern="^[0-9+\s()-]*$">
+        </div>
+
+        <!-- Country -->
+        <div>
+          <label for="country">{{- 'globe-02.svg' | inline_asset_content -}}Your Country *</label>
+          <select id="country" name="country" required>
+            <option value="" disabled selected>Country</option>
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Armenia</option>
+            <option>United Kingdom</option>
+            <option>France</option>
+          </select>
+        </div>
+
+        <!-- City -->
+        <div>
+          <label for="city">{{- 'globe-02.svg' | inline_asset_content -}}Your City *</label>
+          <select id="city" name="city" required>
+            <option value="" disabled selected>City</option>
+            <option>New York</option>
+            <option>Los Angeles</option>
+            <option>Yerevan</option>
+            <option>London</option>
+            <option>Paris</option>
+          </select>
+        </div>
+
+        <!-- Street -->
+        <div>
+          <label for="street_address">{{- 'address-book.svg' | inline_asset_content -}}Street Address *</label>
+          <input type="text" id="street_address" name="street_address" required placeholder="Street address">
+        </div>
+
+        <!-- Postal -->
+        <div>
+          <label for="postal_code">{{- 'globe-02.svg' | inline_asset_content -}}Postal Code *</label>
+          <input type="number" id="postal_code" name="postal_code" required placeholder="12456">
+        </div>
+
+        <!-- Divider -->
+        <div class="full-width"><hr></div>
+        <h3 class="full-width" style="margin-bottom: -7px;">Custom City Address</h3>
+
+        <!-- Custom Country -->
+        <div>
+          <label for="custom_country">{{- 'globe-02.svg' | inline_asset_content -}}Country of the City *</label>
+          <select id="custom_country" name="custom_country" required>
+            <option value="" disabled selected>United States</option>
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Armenia</option>
+          </select>
+        </div>
+
+        <!-- Custom City -->
+        <div class="">
+          <label for="custom_city">{{- 'globe-02.svg' | inline_asset_content -}}City/State *</label>
+          <select id="custom_city" name="custom_city" required>
+            <option value="" disabled selected>New York</option>
+            <option>New York</option>
+            <option>Los Angeles</option>
+            <option>Yerevan</option>
+          </select>
+        </div>
+
+        <!-- Coordinates -->
+        <div class="full-width">
+          <label for="coordinates">{{- 'latitude.svg' | inline_asset_content -}}Select the Coordinates of the Area *</label>
+          <input type="text" id="coordinates" name="coordinates" placeholder="00°00'00&quot;N , 00°00'00&quot;E" required>
+        </div>
+
+        <!-- File Upload -->
+        <div class="full-width">
+          <label>{{- 'mail-01.svg' | inline_asset_content -}}Attach Related Images of the Area *</label>
+          <div class="file-upload-wrapper" tabindex="0">
+            <label for="image" class="file-upload-label">
+              <div class="custom-upload-wrapper">
+              {{- 'upload.svg' | inline_asset_content -}}
+              <div>
+                <p class="upload-title">Upload Image</p>
+              <p class="upload-subtitle">
+              Browse or drag & drop the image of related images
+            </p>
+            </div>
+              </div>
+              
+              <input type="file" id="image" name="image" accept="image/*" required>
+            </label>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Submit -->
+      <button  class="button button--secondary animate-arrow" type="submit">
+        {{ section.settings.button_text }}
+        <span class="svg-wrapper">
+        <span class="icon-wrap">{{ 'button-arrow.svg' | inline_asset_content }}</span>
+        </span>
+      </button>
+    {%- endform -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "form_id",
+      "label": "Formspree Form ID",
+      "default": "your_form_id"
+    },
+    {
+      "type": "text",
+      "id": "form_title",
+      "label": "Form title",
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Submit Button Text",
+      "default": "Order now for $300"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Form"
+    }
+  ]
+}
+{% endschema %}

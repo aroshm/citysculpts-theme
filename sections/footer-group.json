@@ -1,0 +1,101 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "newsletter_9gqHwi": {
+      "type": "newsletter",
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_b88dEa": {
+          "type": "text",
+          "settings": {
+            "heading": "Shop",
+            "subtext": "",
+            "block_menu": "shop-menu"
+          }
+        },
+        "text_Grtbym": {
+          "type": "text",
+          "settings": {
+            "heading": "Quick links",
+            "subtext": "",
+            "block_menu": "quick-link-menu"
+          }
+        },
+        "text_hn46J4": {
+          "type": "text",
+          "settings": {
+            "heading": "Legal",
+            "subtext": "",
+            "block_menu": "legal-menu"
+          }
+        },
+        "text_7PtWG3": {
+          "type": "text",
+          "settings": {
+            "heading": "Corporate",
+            "subtext": "",
+            "block_menu": "corporate-menu"
+          }
+        }
+      },
+      "block_order": [
+        "text_b88dEa",
+        "text_Grtbym",
+        "text_hn46J4",
+        "text_7PtWG3"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "newsletter_enable": false,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "about_heading": "About Citysculp.com",
+        "about_text": "<p>CITYSCULPS is a Design Start-Up located close to Frankfurt, Germany. We recreate world's greatest cities as 3D miniature models to connect you to the places you love. Our passion for craftsmanship guarantees products of the highest quality, manufactured with precision and care.</p>",
+        "email_placeholder": "Enter your email",
+        "success_message": "Thanks for subscribing!",
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff",
+        "heading_color": "#ffffff",
+        "button_color": "#1a1a1a",
+        "button_text_color": "#ffffff",
+        "button_hover_color": "#005a99",
+        "input_background_color": "#1a1a1a",
+        "input_text_color": "#ffffff",
+        "input_border_color": "#ffffff",
+        "input_placeholder_color": "#ffffff",
+        "success_color": "#4caf50",
+        "error_color": "#f44336"
+      }
+    }
+  },
+  "order": [
+    "newsletter_9gqHwi",
+    "footer"
+  ]
+}

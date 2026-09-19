@@ -1,0 +1,82 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "50% on all Christmas orders",
+            "link": "shopify://collections/new-in"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "settings": {
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "color_scheme": "scheme-2",
+        "show_line_separator": true,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_7fwntp": {
+          "type": "mega_menu",
+          "settings": {
+            "custom_menu": "header-right-menu"
+          }
+        },
+        "collection_MgaM4M": {
+          "type": "collection",
+          "settings": {
+            "all_cities_collection": "all-cities"
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_7fwntp",
+        "collection_MgaM4M"
+      ],
+      "custom_css": [],
+      "settings": {
+        "logo_position": "middle-center",
+        "logo_size": 118,
+        "menu": "main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-5",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": true,
+        "margin_bottom": 0,
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "shop_all_collection": "frames"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

@@ -1,0 +1,633 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "column_9hbYRD": {
+          "type": "column",
+          "settings": {
+            "heading": "The world from new perspectives",
+            "subheading": "Your Travels, Your Stories, Your Cities",
+            "button_label": "SHOP THE CITIES",
+            "button_link": "shopify://collections/all-cities"
+          }
+        },
+        "column_TN6YHk": {
+          "type": "column",
+          "settings": {
+            "heading": "Collect the cities you love Welcome to CitySculps",
+            "subheading": "Find Cities you love and make your home beautiful",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "column_9hbYRD",
+        "column_TN6YHk"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/download_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "top-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "image_with_text_fx8nXX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_P8aeFL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to CITYFRAMES",
+            "heading_size": "h1"
+          }
+        },
+        "text_dnm8nG": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>With our minimalistic design approach, we provide distinctive views into the true essence of a city. Innovative production techniques are combined with high-quality, hand-processed 3D data. We are a young and passionate team dedicated to reshaping our world in new ways.<br/><br/></h2>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_P8aeFL",
+        "text_dnm8nG"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/19_1_1.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_mfJgHk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PLmVg9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to CITYFRAMES",
+            "heading_size": "h2"
+          }
+        },
+        "text_gA7EKF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With our minimalistic design approach, we provide distinctive views into the true essence of a city. Innovative production techniques are combined with high-quality, hand-processed 3D data. We are a young and passionate team dedicated to reshaping our world in new ways.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PLmVg9",
+        "text_gA7EKF"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 100%;}",
+        ".rich-text h2 {font-family: \"Euclid-medium\"; font-size: 12px; text-transform: uppercase;}",
+        ".rich-text p {font-size: 25px; line-height: 1.5;}",
+        "@media (min-width: 768px) {.rich-text p {font-size: 35px; }}",
+        "@media (min-width: 1200px) {.rich-text p {font-size: 43px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "featured_collection_qcJLp4": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-weight: 400;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "title": "Bestsellers wordwide",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 16
+      }
+    },
+    "video_atmM6G": {
+      "type": "video",
+      "disabled": true,
+      "custom_css": [
+        ".video-section {max-width: 884px;}"
+      ],
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=WqLPYsv9aek&pp=ygUKY2l0eWZyYW1lcw%3D%3D",
+        "cover_image": "shopify://shop_images/image_1_877c2dd6-e98e-4d38-bb96-eab83feed4ef.png",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 52,
+        "padding_bottom": 100
+      }
+    },
+    "featured_collection_3ep9tk": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "new-in",
+        "products_to_show": 4,
+        "title": "New Arrival",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_tL7NYX": {
+      "type": "multicolumn",
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_yenW7f": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_htBLtM": {
+          "type": "heading",
+          "settings": {
+            "heading": "CITYSCULPS lets you collect your favorite cityscapes and place them on your wall to become part of your living room or bedroom decor.",
+            "heading_size": "h2"
+          }
+        },
+        "text_EzGe6M": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_htBLtM",
+        "text_EzGe6M"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-weight: unset; letter-spacing: 1.99px; line-height: 1.45;}",
+        ".button.animate-arrow {width: 268px;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 90px) {.rich-text__blocks {max-width: 75rem; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_RtYdzi": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6CGaHU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iBWybF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Bfai9Y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PrxPtT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/image_24.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6CGaHU",
+        "column_iBWybF",
+        "column_Bfai9Y",
+        "column_PrxPtT"
+      ],
+      "custom_css": [
+        ".slider-mobile-gutter {margin: 0 auto; max-width: 812px;}",
+        ".button--primary {margin-top: 90px;}",
+        ".button--primary .svg-wrapper {width: 20px;}",
+        ".multicolumn-list__item {padding: 1rem;}",
+        "@media (min-width: 992px);"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "LEARN MORE ABOUT City SculpS",
+        "button_link": "shopify://pages/our-story",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 88
+      }
+    },
+    "custom_newsletter_signup_794kYz": {
+      "type": "custom-newsletter-signup",
+      "name": "Newsletter signup",
+      "settings": {
+        "heading": "<p>Join the CITYSCULPS Community</p>",
+        "description": "<p>Subscribe to our newsletter for exclusive updates, new product launches, and special offers delivered straight to your inbox.</p>",
+        "email_placeholder": "Enter your email address",
+        "success_message": "Thank you for subscribing to our newsletter!",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "logo": "shopify://shop_images/Group_9.svg",
+        "logo_width_desktop": 200,
+        "logo_width_mobile": 150,
+        "background_color": "#f3f2ee",
+        "text_color": "#121212",
+        "input_background_color": "#f3f2ee",
+        "input_text_color": "#ffffff",
+        "input_border_color": "#121212",
+        "input_focus_border_color": "#121212",
+        "placeholder_color": "#121212",
+        "button_color": "#f3f2ee",
+        "button_hover_color": "#f3f2ee",
+        "button_text_color": "#121212",
+        "success_color": "#008060",
+        "error_color": "#d82c0d"
+      }
+    },
+    "17565811949376d528": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "1756580565ddcee691": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_bc175c7_8wNLJM": {
+          "type": "ai_gen_block_bc175c7",
+          "settings": {
+            "testimonial_text": "The CITYFRAME that I bought was a gift and the person who received it was literally astonished and positively impressed by the originality of this item. It was an excellent purchase",
+            "author_name": "Allan Lokos",
+            "author_title": "Verified Customer",
+            "background_color": "#ffffff",
+            "text_color": "#2c2c2c",
+            "author_color": "#1a1a1a",
+            "title_color": "#ffffff",
+            "quote_marks_color": "#ffffff",
+            "decorative_pattern": "dots",
+            "pattern_color": "#ffffff",
+            "pattern_opacity": 30
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_bc175c7_8wNLJM"
+      ],
+      "settings": {}
+    },
+    "175611868206670465": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17561187151bf2afdf": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1764919489dfb65b5d": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_LUanjq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_LUanjq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1756118728795fc67e": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_collection_pHAmz8": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "",
+        "products_to_show": 4,
+        "title": "Our products",
+        "heading_size": "h1",
+        "description": "<p>Crafted with care to bring beauty, detail, and meaning into every space.<br/><br/></p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "slideshow_VhA7FF": {
+      "type": "slideshow",
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_cFCi7Q": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LDfjMc": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>All CITIES MINI CUBE CUBE FRAME FRAME WIDE  FRAME GRAND</strong><br/><br/></h5>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LDfjMc"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "1756586027af3499f3": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0cd2c9b_Apykkd": {
+          "type": "ai_gen_block_0cd2c9b",
+          "settings": {
+            "testimonial_text": "The art of peaceful living comes down to living compassionately and wisely.",
+            "author_name": "ALLAN LOKOS",
+            "feature_icon_one": "shopify://shop_images/hugeicons_shipping-truck-01.svg",
+            "feature_heading_one": "Free Shipping",
+            "feature_text_one": "Enjoy FREE Shipping on orders over $75 US, €55 EU, £55 UK. We ship worldwide!",
+            "feature_icon_two": "shopify://shop_images/carbon_wireless-checkout.svg",
+            "feature_heading_two": "100% Secure Checkout",
+            "feature_text_two": "Shop with confidence that your purchase is safe and secure throughout the checkout process.",
+            "feature_icon_three": "shopify://shop_images/ri_refund-2-fill.svg",
+            "feature_heading_three": "6 Month Money-Back Guarantee",
+            "feature_text_three": "Because we’re confident you’ll experience transformative change.",
+            "text_color": "#000000",
+            "background_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0cd2c9b_Apykkd"
+      ],
+      "settings": {}
+    },
+    "1756579413c123c6b8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_db1def7_nRm3iV": {
+          "type": "ai_gen_block_db1def7",
+          "settings": {
+            "testimonial_quote": "This product has completely transformed my business. The quality and service are exceptional.",
+            "author_name": "Allan Lokos",
+            "author_title": "",
+            "max_width": 800,
+            "section_padding_desktop": 80,
+            "section_padding_mobile": 50,
+            "background_color": "#ffffff",
+            "background_gradient": "",
+            "quote_color": "#121212",
+            "author_color": "#121212",
+            "title_color": "#ffffff",
+            "decoration_color_1": "#ffffff",
+            "decoration_color_2": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_db1def7_nRm3iV"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "1756582787cf9c62e9": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_d6fe428_qDGMwJ": {
+          "type": "ai_gen_block_d6fe428",
+          "settings": {
+            "about_heading": "About Citysculp.com",
+            "about_text": "<p>CITYSCULPS is a Design Start-Up located close to Frankfurt, Germany. We recreate world's greatest cities as 3D miniature models to connect you to the places you love. Our passion for craftsmanship guarantees products of the highest quality, manufactured with precision and care.</p>",
+            "email_placeholder": "Your Email",
+            "success_message": "Thanks for subscribing!",
+            "background_color": "#1a1a1a",
+            "text_color": "#ffffff",
+            "heading_color": "#ffffff",
+            "button_color": "#1a1a1a",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#1a1a1a",
+            "input_background_color": "#1a1a1a",
+            "input_text_color": "#ffffff",
+            "input_border_color": "#ffffff",
+            "input_placeholder_color": "#ffffff",
+            "success_color": "#4caf50",
+            "error_color": "#f44336"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_d6fe428_qDGMwJ"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "17565845677f5c6291": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "175658576498c5c338": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "1756587578ab8e7288": {
+      "type": "_blocks",
+      "settings": {}
+    }
+  },
+  "order": [
+    "image_banner",
+    "image_with_text_fx8nXX",
+    "rich_text_mfJgHk",
+    "featured_collection_qcJLp4",
+    "video_atmM6G",
+    "featured_collection_3ep9tk",
+    "multicolumn_tL7NYX",
+    "rich_text_yenW7f",
+    "multicolumn_RtYdzi",
+    "custom_newsletter_signup_794kYz",
+    "17565811949376d528",
+    "1756580565ddcee691",
+    "175611868206670465",
+    "17561187151bf2afdf",
+    "1764919489dfb65b5d",
+    "1756118728795fc67e",
+    "featured_collection_pHAmz8",
+    "slideshow_VhA7FF",
+    "rich_text_cFCi7Q",
+    "1756586027af3499f3",
+    "1756579413c123c6b8",
+    "1756582787cf9c62e9",
+    "17565845677f5c6291",
+    "175658576498c5c338",
+    "1756587578ab8e7288"
+  ]
+}

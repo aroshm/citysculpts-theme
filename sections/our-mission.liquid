@@ -1,0 +1,204 @@
+{% comment %}
+  Our misson
+  Lets you add a block with two columns on with an image one with a text.
+{% endcomment %}
+
+{%  style %}
+.our-misson {
+  padding-block: 40px;
+  position: relative;
+}
+
+.our-misson__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.our-misson__content {
+    background-color: #fff;
+    flex: 1 1 0;
+    padding: 60px 42px;
+    position: relative;
+    z-index: 2;
+}
+
+.our-misson__heading {
+  font-family: 'Euclid-medium';
+  font-size: 12px;
+  font-weight: unset;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+}
+
+.our-misson__subtitle {
+    font-family: 'Euclid-regular';
+  font-size: 23px;
+  line-height: 1.3;
+  margin-bottom: 64px;
+  margin-top: 0;
+}
+
+.our-misson__image {
+    flex: 1 1 0;
+}
+
+.our-misson__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Background pattern example */
+.our-misson__content::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 500px;
+  height: 290px;
+  background-image: url("{{ 'misson-bg.svg' | asset_url }}");
+  background-size: contain;
+    background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.button--mission {
+    background-color: {{ section.settings.button_background }};
+    color: {{ section.settings.button_color }};
+    font-family: 'Euclid-medium';
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.button--mission .svg-wrapper {
+    margin-left: 10px;
+    width: auto;
+}
+
+.button--mission svg path {
+    fill: {{ section.settings.button_color }}
+}
+
+@media (min-width: 768px) {
+    .our-misson__subtitle {
+      font-size: 35px;
+    }
+}
+
+@media (min-width: 996px) {
+  .our-misson__container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1200px) {
+  .our-misson__container {
+    max-width: 1390px;
+  }
+
+  .our-misson__subtitle {
+    font-size: 43px;
+  }
+
+  .our-misson__content,
+  .our-misson__image {
+    max-width: 660px;
+  }
+}
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Custom Our Misson",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Subtitle goes here",
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our mission"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Learn more",
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+        "type": "color",
+        "id": "button_background",
+        "label": "Button background"
+    },
+    {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button text color"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right side image"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }, 
+  ],
+  "presets": [
+    {
+      "name": "Custom Our Misson"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="our-misson color-{{ section.settings.color_scheme }}">
+  <div class="our-misson__container page-width">
+    <div class="our-misson__content">
+      {% if section.settings.heading != blank %}
+        <h2 class="our-misson__heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+
+      {% if section.settings.subtitle != blank %}
+        <p class="our-misson__subtitle">{{ section.settings.subtitle }}</p>
+      {% endif %}
+
+      {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="button button--mission animate-arrow">
+          {{ section.settings.button_text }}
+          <span class="svg-wrapper">
+            <span class="icon-wrap">{{ 'button-arrow.svg' | inline_asset_content }}</span>
+            </span>
+        </a>
+      {% endif %}
+    </div>
+
+    <div class="our-misson__image">
+        {% if section.settings.right_image != blank %}
+            {% assign widths = "375, 750, 1100, 1500, 1780, 2000" %}
+            {% assign sizes = "(min-width: 1200px) 50vw, 100vw" %}
+            {% assign fetch_priority = "auto" %}
+            
+            {{
+                section.settings.right_image
+                | image_url: width: 1500
+                | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+            }}
+        {% endif %}
+    </div>
+  </div>
+</section>

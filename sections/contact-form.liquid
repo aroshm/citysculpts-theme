@@ -1,0 +1,360 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .custom-form-wrapper {
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  .custom-form-wrapper {
+  max-width: 792px;
+  }
+}
+
+.custom-form-wrapper label {
+  font-family: 'Euclid-regular';
+  font-weight: unset;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 6px;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.custom-form-wrapper input[type="text"],
+.custom-form-wrapper input[type="email"],
+.custom-form-wrapper input[type="tel"],
+.custom-form-wrapper select,
+.custom-form-wrapper input[type="file"],
+.custom-form-wrapper input[type="number"] {
+  background-color: #F3F2EE;
+  font-family: 'Euclid-regular';
+  font-weight: unset;
+  width: 100%;
+  padding: 15px 14px;
+  border: 0 none;
+  border-radius: 0;
+  font-size: 14px;
+  transition: border-color 0.25s ease;
+  box-sizing: border-box;
+}
+
+.custom-form-wrapper input:focus,
+.custom-form-wrapper select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.custom-form-wrapper select {
+  background-image: url(https://cdn.shopify.com/s/files/1/0923/2059/6310/files/caret.svg?v=1758115274);
+  background-position: 95% 17px;
+  background-repeat: no-repeat;
+  appearance: none;
+  cursor: pointer;
+}
+
+.file-upload-wrapper {
+  background-color: #F3F2EE;
+  border: 2px dashed #ccc;
+  padding: 35px;
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  border-radius: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.file-upload-wrapper:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.file-upload-wrapper input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.file-upload-hint {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.custom-form-submit {
+  margin-top: 28px;
+  background-color: #007bff;
+  color: white;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-form-submit:hover {
+  background-color: #0056b3;
+}
+
+.custom-form-wrapper hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 7px 0 3px 0;
+}
+
+  .custom-form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+.custom-form-wrapper h2 {
+  font-family: 'Canela-regular';
+  font-size: 40px;
+  font-weight: unset;
+  margin: 0 auto 69px;
+  max-width: 512px;
+  text-align: center;
+}
+
+.custom-upload-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.custom-upload-wrapper > div {
+  width: 230px;
+}
+
+.custom-upload-wrapper > div p {
+  font-size: 14px;
+  margin: 0;
+ text-align: left;
+ text-transform: initial;
+}
+
+.upload-title {
+  font-family: 'Euclid-medium';
+  margin-bottom: 4px;
+}
+
+.upload-subtitle {
+  line-height: 1.2;
+}
+
+.custom-form-wrapper .button {
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    padding-inline: 0;
+    
+      width: 100%;
+
+}
+.custom-form-wrapper .button .svg-wrapper {
+    left: 10px;
+position: relative;
+    top: 0;
+    transform: translateY(0);
+}
+.custom-form-wrapper .button .svg-wrapper svg path {
+  fill: white;
+}
+
+.custom-form-wrapper h3 {
+  font-family: "Canela-regular";
+  font-size: 24px;
+  font-weight: unset;
+  margin: 0 0 24px;
+}
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="custom-form-wrapper">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {{ section.settings.heading }}
+      </h2>
+    {%- else -%}
+      <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+    {%- endif -%}
+    {%- liquid
+      assign contact_form_class = 'isolate'
+      if settings.animations_reveal_on_scroll
+        assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
+      endif
+    -%}
+    {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+      {%- if form.posted_successfully? -%}
+        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+          {{- 'icon-success.svg' | inline_asset_content -}}
+          {{ 'templates.contact.form.post_success' | t }}
+        </h2>
+      {%- endif -%}
+      <div class="custom-form-grid">
+        <div>
+          <label for="ContactForm-name">{{- 'user.svg' | inline_asset_content -}}name</label>
+          <input
+            autocomplete="name"
+            type="text"
+            id="ContactForm-name"
+            name="contact-name-"
+            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+            placeholder="Name"
+          >
+        </div>
+        <div>
+          <label for="ContactForm-company">{{- 'company.svg' | inline_asset_content -}}Company</label>
+          <input
+            autocomplete="company"
+            type="text"
+            id="ContactForm-company"
+            name="contact-company"
+            value="{% if form.company %}{{ form.company }}{% elsif customer %}{{ customer.company }}{% endif %}"
+            placeholder="Company"
+          >
+        </div>
+        <div>
+          <label for="ContactForm-email">{{- 'mail-01.svg' | inline_asset_content -}}
+            {{- 'templates.contact.form.email' | t }}
+            <span aria-hidden="true">*</span></label
+          >
+          <input
+            autocomplete="email"
+            type="email"
+            id="ContactForm-email"
+            name="contact[email]"
+            spellcheck="false"
+            autocapitalize="off"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            aria-required="true"
+            {% if form.errors contains 'email' %}
+              aria-invalid="true"
+              aria-describedby="ContactForm-email-error"
+            {% endif %}
+            placeholder="{{ 'templates.contact.form.email' | t }}"
+          >
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="button">
+          Register now for access
+        </button>
+      </div>
+    {%- endform -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "t:sections.contact-form.settings.title.default",
+      "label": "t:sections.contact-form.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
+  ]
+}
+{% endschema %}

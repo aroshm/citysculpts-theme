@@ -1,0 +1,346 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_iUe6pM": {
+      "type": "rich-text",
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "multicolumn_xebmUr": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9AWtjb": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>North America</strong>",
+            "text": "<p>Boston</p><p>Chicago</p><p>Calgary</p><p>Cancun</p><p>Dallas</p><p>Guadalajara</p><p>Houston</p><p>Los Angeles</p><p>Miami</p><p>Mexico City</p><p>Monterey</p><p>Montreal</p><p>New York City</p><p>Philadelphia</p><p>Quebec City</p><p>San Francisco</p><p>Seattle</p><p>San Diego</p><p>Toronto</p><p>Vancouver</p><p></p><p></p><p></p><p></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HP69Ac": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Aouth America</strong>",
+            "text": "<p>Asuncion</p><p>Belo Horizonte</p><p>Bogota</p><p>Brazilia</p><p>Buenos Aires</p><p>Cali</p><p>Caracas</p><p>Curitiba</p><p>Fortaleza</p><p>Guayaquil</p><p>La Paz</p><p>Lima</p><p>Medellin</p><p>Mexico City</p><p>Montevideo</p><p>Recif</p><p>Rio de Janeiro</p><p>Salvador</p><p>Santiago</p><p>Sao Paulo</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UJfDrY": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Eourop</strong>",
+            "text": "<p>Amsterdam</p><p>Athens</p><p>Barselona</p><p>Belgrade</p><p>Berlin</p><p>Brussels</p><p>Budapest</p><p>Copenhagen</p><p>Dublin</p><p>Helsinki</p><p>Istanbul</p><p>Lisabon</p><p>London</p><p>Madrid</p><p>Milan</p><p>Moscow</p><p>Munich</p><p>Oslo</p><p>Paris</p><p>Prague</p><p>Rome</p><p>Stockholm</p><p>Vienna</p><p>Warsaw</p><p>Rome</p><p>Zurich</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rBJTeb": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Middle East</strong>",
+            "text": "<p>Abu Dhabi</p><p>Aden</p><p>Aleppo</p><p>Amman</p><p>Baghdad</p><p>Basra</p><p>Beirut</p><p>Cairo</p><p>Damascus</p><p>Doha </p><p>Dubai</p><p>Erbil</p><p>Gaziantep</p><p>Isfahan</p><p>Jeddah</p><p>Jerusalem</p><p>Kuwait city</p><p>Manama</p><p>Mashhad</p><p>Mecca</p><p>Madina</p><p>Muscat</p><p>Riyadh</p><p>Sana'a</p><p>Tehran</p><p>Tel Aviv</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VdrMnN": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Asia</strong>",
+            "text": "<p>Bangkok</p><p>Beijing</p><p>Colombo</p><p>Delhi</p><p>Dhaka</p><p>Hanoi</p><p>Ho Chi Minh City </p><p>Hong Kong</p><p>Istanbul</p><p>Jakarta</p><p>Karachi</p><p>Kathmandu</p><p>Kuala Lumpur</p><p>Lahore</p><p>Manila</p><p>Mumbai</p><p>Osaka</p><p>Riyadh</p><p>Seoul</p><p>Shanghai</p><p>Singapore</p><p>Taipei</p><p>Tashkent</p><p>Tokyo</p><p>Ulaanbaatar<br/><br/></p><p></p><p></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9AWtjb",
+        "column_HP69Ac",
+        "column_UJfDrY",
+        "column_rBJTeb",
+        "column_VdrMnN"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_body_menu_DFE8UD": {
+      "type": "custom_body_menu",
+      "blocks": {
+        "menu_block_WAkT6w": {
+          "type": "menu_block",
+          "settings": {
+            "menu": "cities-menu"
+          }
+        }
+      },
+      "block_order": [
+        "menu_block_WAkT6w"
+      ],
+      "name": "Custom Menus",
+      "settings": {}
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "custom_css": [
+        ".template-search__search {margin-bottom: 30px;}"
+      ],
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "custom_newsletter_signup_zyJBgA": {
+      "type": "custom-newsletter-signup",
+      "name": "Newsletter signup",
+      "settings": {
+        "heading": "<p>Join the CITYSCULPS Community</p>",
+        "description": "<p>Subscribe to our newsletter for exclusive updates, new product launches, and special offers delivered straight to your inbox.</p>",
+        "email_placeholder": "Enter your email address",
+        "success_message": "Thank you for subscribing to our newsletter!",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "logo": "shopify://shop_images/image_c61f22d7-1409-4d01-b2f5-abc875ab246c.png",
+        "logo_width_desktop": 200,
+        "logo_width_mobile": 150,
+        "background_color": "#f3f2ee",
+        "text_color": "#121212",
+        "input_background_color": "#f3f2ee",
+        "input_text_color": "#121212",
+        "input_border_color": "#121212",
+        "input_focus_border_color": "#121212",
+        "placeholder_color": "#121212",
+        "button_color": "#f3f2ee",
+        "button_hover_color": "#f3f2ee",
+        "button_text_color": "#ffffff",
+        "success_color": "#008060",
+        "error_color": "#d82c0d"
+      }
+    },
+    "multicolumn_h98hhd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_pCUYBE": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RDgXRN": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Q4jXBW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Frame_a7e5de03-e5c5-465f-b405-3e5546aae968.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_pCUYBE",
+        "column_RDgXRN",
+        "column_Q4jXBW"
+      ],
+      "custom_css": [
+        ".multicolumn-list__item.center .media--adapt img {height: auto; width: 77px;}",
+        ".slider-mobile-gutter {border-top: 1px solid #000; padding-top: 70px;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_EFgFer": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DzQ9fV": {
+          "type": "heading",
+          "settings": {
+            "heading": "“The art of peaceful living comes down to living compassionately and wisely.\"",
+            "heading_size": "h2"
+          }
+        },
+        "text_hbbmLz": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>ALLAN LOKOS<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DzQ9fV",
+        "text_hbbmLz"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset;}",
+        ".rich-text__text {margin-top: 48px;}",
+        ".rich-text__text p {font-family: \"Euclid-medium\"; font-size: 12px; letter-spacing: 1.3px;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {.rich-text__blocks {max-width: 780px; } h2 {font-size: 43px; letter-spacing: 2.3px; line-height: 1.4; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_zj9QNw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_naM8LY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1362790810.png",
+            "title": "Community-Only Deals",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UaHqwg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_9817081b-600b-44f0-8e3c-d27f13f77762.png",
+            "title": "10% Welcome Discount",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_YVfCDM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_1_62d4bbf0-214b-4262-9d1a-23dafaebb227.png",
+            "title": "Prioritized Order handling",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_naM8LY",
+        "column_UaHqwg",
+        "column_YVfCDM"
+      ],
+      "custom_css": [
+        ".multicolumn-card__image-wrapper {margin: 0 auto;}",
+        ".multicolumn-card__image-wrapper .media {display: flex; justify-content: center; padding: 0 !important;}",
+        ".multicolumn-card__image-wrapper img {height: auto; position: relative; width: 72px;}",
+        ".multicolumn-card__info h3 {font-size: 17px; text-align: center; text-transform: uppercase;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "rich_text_iUe6pM",
+    "banner",
+    "multicolumn_xebmUr",
+    "custom_body_menu_DFE8UD",
+    "product-grid",
+    "custom_newsletter_signup_zyJBgA",
+    "multicolumn_h98hhd",
+    "rich_text_EFgFer",
+    "multicolumn_zj9QNw"
+  ]
+}

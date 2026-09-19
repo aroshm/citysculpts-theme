@@ -1,0 +1,980 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_T6brey": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "OUR DIFFERENCE\nMaking behavior change simple,  beautiful and accessible.",
+        "color_scheme": "",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "multirow_r3MpqY": {
+      "type": "multirow",
+      "blocks": {
+        "row_rK6Jye": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "caption": "",
+            "heading": "A family united by wanderlust",
+            "text": "<p>At City Sculp, our love for exploration and creativity shapes who we are. As passionate travelers, we treasure discovering vibrant cities and peaceful landscapes, each journey inspiring our lives and our work.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_NYw6rd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "caption": "",
+            "heading": "Capturing the essence of cities",
+            "text": "<p>With a sharp eye for detail, we capture each city’s unique charm and character. Blending exploration with artistic expression, we create pieces that share our sense of wonder with adventurers and art lovers alike.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_FbFM6G": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "caption": "",
+            "heading": "Transforming memories into art",
+            "text": "<p>We transform our travels into tangible art, sharing the joy of discovery and the beauty of cities worldwide. Join us on this journey and bring a piece of our adventures into your space.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_rK6Jye",
+        "row_NYw6rd",
+        "row_FbFM6G"
+      ],
+      "disabled": true,
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "small",
+        "desktop_image_width": "small",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "subtitle",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_DWbpjJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_i6hQEn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Embracing the journey ahead",
+            "heading_size": "h1"
+          }
+        },
+        "text_tqYyKi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Knowing time is fleeting, we embrace every journey and creation. Each project reflects our passion for exploring, crafting, and sharing the world’s beauty one city at a time.<br/><br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_i6hQEn",
+        "text_tqYyKi"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/5.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_cCbhr7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_J9Bik3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Premium doesn't mean wasteful. We use natural, recycled, and compostable materials to protect our shared home.",
+            "heading_size": "h1"
+          }
+        },
+        "text_8dC7gp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_4rmMxz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_J9Bik3",
+        "text_8dC7gp",
+        "button_4rmMxz"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_K846Dm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JMj4gP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/7.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_czjcJh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/8.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XQL7Px": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_p9NjNx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/20.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JMj4gP",
+        "column_czjcJh",
+        "column_XQL7Px",
+        "column_p9NjNx"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Premium doesn't mean wasteful. We use natural, recycled, and compostable materials to protect our shared home.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "See Our Impact",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 16
+      }
+    },
+    "image_with_text_qNMh8a": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RYmgie": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR MISSION",
+            "heading_size": "h2"
+          }
+        },
+        "text_G4RrMM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are on a mission to help 1% of the global population create a positive change in their lives. This is only the beginning.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_zPmzbr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_RYmgie",
+        "text_G4RrMM",
+        "button_zPmzbr"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/19.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_hLiF9p": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_h699ii": {
+          "type": "heading",
+          "settings": {
+            "heading": "It's time to unleash your full potential. It's time to be part of—Intelligent Change.",
+            "heading_size": "h2"
+          }
+        },
+        "text_VV8XNf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Now is the perfect time to start living a more mindful, fulfilling life. Make the time to look after yourself, change the way you think and take notice as the world reflects those changes right back at you.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_66cbKR": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_h699ii",
+        "text_VV8XNf",
+        "button_66cbKR"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/18.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_t6wtbg": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "new-in",
+        "products_to_show": 4,
+        "title": "Bestsellers Worldwide",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_bPTEHh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UUMWmE": {
+          "type": "heading",
+          "settings": {
+            "heading": "“The art of peaceful living comes down to living compassionately and wisely.\"",
+            "heading_size": "h1"
+          }
+        },
+        "text_FEAxdj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ALLAN LOKOS<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UUMWmE",
+        "text_FEAxdj"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_W6RJYm": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_y4rkAT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Want the custom design of your own house?",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_y4rkAT"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 1200px) {.banner--desktop-transparent .banner__box {max-width: 60rem; }}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_9.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_YHRG9t": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fxxnwb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your own house, custom made in 3D",
+            "heading_size": "h1"
+          }
+        },
+        "text_iMp3t7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bring your dream home's facade and front exterior to life with a personalized 3D model, custom-made to capture every detail that matters to you. From the overall design to the smallest touches, each piece is crafted with care to reflect your unique vision. <strong>Starting at just $300 USD, it’s the perfect way to own a one-of-a-kind creation.</strong></p>"
+          }
+        },
+        "button_pYcwbW": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET YOUR CUSTOM DESIGN",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fxxnwb",
+        "text_iMp3t7",
+        "button_pYcwbW"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0 auto; text-transform: unset; max-width: 710px;}",
+        ".rich-text__text {margin-top: 23px; margin-inline: auto;}",
+        "p {font-family: \"Canela-light\"; font-size: 16px; letter-spacing: 0.9px;}",
+        ".button {margin-top: 0; text-transform: uppercase; width: 230px;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; line-height: 1.2; letter-spacing: 2px; } .rich-text__blocks {max-width: 82rem; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 40
+      }
+    },
+    "multicolumn_kB663t": {
+      "type": "multicolumn",
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_fxacE7": {
+      "type": "image-banner",
+      "custom_css": [
+        ".banner {margin: 0 auto; max-width: 1295px;}",
+        "@media screen and (min-width: 1200px) {.banner--small:not(.banner--adapt) {min-height: 57rem; }}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/a-realistic-photograph-of-the-same-smiling-person-_1.jpg",
+        "image_2": "shopify://shop_images/WhatsApp_Image_2025-08-16_at_14.09.28_1_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "newsletter_n9NKYD": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_Fpd7KL": {
+          "type": "heading",
+          "settings": {
+            "heading": "How Does It Work",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Fpd7KL"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0 auto; text-transform: unset;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; line-height: 1.2; letter-spacing: 2px; }}"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_DPKciN": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_WRATeW": {
+          "type": "column",
+          "settings": {
+            "title": "Step 1.",
+            "text": "<h4>Send us a picture of your house</h4><p>We’d love to see your happy place. Share a picture of your house and be part of our story.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PhKFH6": {
+          "type": "column",
+          "settings": {
+            "title": "Step 2.",
+            "text": "<h4>Tell us what's important</h4><p>Share high-quality photos from multiple angles that showcase your house's most meaningful details and unique character.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_WRATeW",
+        "column_PhKFH6"
+      ],
+      "custom_css": [
+        ".multicolumn-list {gap: 20px;}",
+        ".multicolumn-card__info {background-color: #f3f2ee; height: 100%; padding: 16px 2.5rem;}",
+        ".multicolumn-card__info > :nth-child(2) {margin: 0; padding-inline: 30px;}",
+        "h3,h4 {font-family: \"Canela-regular\"; font-weight: unset;}",
+        "h3 {font-size: 24px; margin: 0;}",
+        "h4 {font-size: 32px; margin-bottom: 14px;}",
+        "p {font-size: 16px; margin: 0;}",
+        "@media (min-width: 768px) {.multicolumn-list__item {flex: 1 1 0px; }}",
+        "@media (min-width: 1200px) {.multicolumn-card__info > :nth-child(2) {padding-inline: 76px; }}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_JJhmqe": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RNxCFD": {
+          "type": "column",
+          "settings": {
+            "title": "Step 3.",
+            "text": "<h4>Review your design</h4><p>Take a moment to share your thoughts. Review your design and let us know what you think.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_fWBeAi": {
+          "type": "column",
+          "settings": {
+            "title": "Step 4.",
+            "text": "<h4>Production & shipping</h4><p>See your order come to life. Track production and shipping every step of the way.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RNxCFD",
+        "column_fWBeAi"
+      ],
+      "custom_css": [
+        ".multicolumn-list {gap: 20px;}",
+        ".multicolumn-card__info {background-color: #f3f2ee; height: 100%; padding: 16px 2.5rem;}",
+        ".multicolumn-card__info > :nth-child(2) {margin: 0; padding-inline: 30px;}",
+        "h3,h4 {font-family: \"Canela-regular\"; font-weight: unset;}",
+        "h3 {font-size: 24px; margin: 0;}",
+        "h4 {font-size: 32px; margin-bottom: 14px;}",
+        "p {font-size: 16px; margin: 0;}",
+        "@media (min-width: 768px) {.multicolumn-list__item {flex: 1 1 0px; }}",
+        "@media (min-width: 1200px) {.multicolumn-card__info > :nth-child(2) {padding-inline: 76px; }}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_Ht8RGQ": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n  .custom-form-wrapper {\n    max-width: 720px;\n    margin: 40px auto; /* Էջում կենտրոնացված */\n    padding: 30px 40px;\n    background: #fff;\n    border-radius: 10px;\n    box-shadow: 0 6px 20px rgba(0,0,0,0.1);\n    box-sizing: border-box;\n  }\n  .custom-form-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 22px 30px;\n  }\n  label {\n    font-weight: 600;\n    color: #333;\n    font-size: 0.9rem;\n    text-transform: uppercase;\n    letter-spacing: 0.03em;\n    margin-bottom: 6px;\n    display: block;\n  }\n  input[type=\"text\"],\n  input[type=\"email\"],\n  input[type=\"tel\"],\n  select,\n  input[type=\"file\"] {\n    width: 100%;\n    padding: 12px 14px;\n    border: 1.5px solid #ccc;\n    border-radius: 6px;\n    font-size: 1rem;\n    transition: border-color 0.25s ease;\n    box-sizing: border-box;\n  }\n  input[type=\"text\"]:focus,\n  input[type=\"email\"]:focus,\n  input[type=\"tel\"]:focus,\n  select:focus,\n  input[type=\"file\"]:focus {\n    border-color: #007bff;\n    outline: none;\n  }\n  select {\n    appearance: none;\n    background: url(\"data:image/svg+xml;charset=US-ASCII,%3csvg%20width%3d'10'%20height%3d'7'%20viewBox%3d'0%200%2010%207'%20xmlns%3d'http%3a//www.w3.org/2000/svg'%3e%3cpath%20d%3d'M0%200l5%207%205-7z'%20fill%3d'%23666'/%3e%3c/svg%3e\") no-repeat right 12px center;\n    background-size: 10px 7px;\n    cursor: pointer;\n  }\n  .full-width {\n    grid-column: 1 / -1;\n  }\n  .file-upload-wrapper {\n    border: 2px dashed #ccc;\n    padding: 30px;\n    text-align: center;\n    color: #666;\n    font-size: 0.95rem;\n    border-radius: 8px;\n    cursor: pointer;\n    transition: border-color 0.3s ease;\n    position: relative;\n  }\n  .file-upload-wrapper:hover {\n    border-color: #007bff;\n    color: #007bff;\n  }\n  input[type=\"file\"] {\n    opacity: 0;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0; left: 0;\n    cursor: pointer;\n  }\n  .file-upload-label {\n    display: inline-block;\n    width: 100%;\n    height: 60px;\n    line-height: 60px;\n    position: relative;\n  }\n  button {\n    margin-top: 28px;\n    background-color: #007bff;\n    color: white;\n    padding: 14px 0;\n    font-size: 1.1rem;\n    border: none;\n    border-radius: 8px;\n    width: 100%;\n    cursor: pointer;\n    transition: background-color 0.3s ease;\n  }\n  button:hover {\n    background-color: #0056b3;\n  }\n  hr {\n    border: none;\n    border-top: 1px solid #eee;\n    margin: 20px 0 30px 0;\n  }\n  @media (max-width: 768px) {\n    .custom-form-grid {\n      grid-template-columns: 1fr;\n      gap: 18px 0;\n    }\n  }\n</style>\n\n<div class=\"custom-form-wrapper\">\n  <form action=\"https://formspree.io/f/{your_form_id}\" method=\"POST\" enctype=\"multipart/form-data\" novalidate>\n    <div class=\"custom-form-grid\">\n      <div>\n        <label for=\"first_name\">First Name *</label>\n        <input type=\"text\" id=\"first_name\" name=\"first_name\" required placeholder=\"Rehan\">\n      </div>\n      <div>\n        <label for=\"last_name\">Last Name *</label>\n        <input type=\"text\" id=\"last_name\" name=\"last_name\" required placeholder=\"Yaseen\">\n      </div>\n\n      <div>\n        <label for=\"email\">Email *</label>\n        <input type=\"email\" id=\"email\" name=\"_replyto\" required placeholder=\"user123@gmail.com\">\n      </div>\n      <div>\n        <label for=\"phone\">Phone Number *</label>\n        <input type=\"tel\" id=\"phone\" name=\"phone\" required placeholder=\"+1 123 238 488\">\n      </div>\n\n      <div>\n        <label for=\"country\">Your Country *</label>\n        <select id=\"country\" name=\"country\" required>\n          <option value=\"\" disabled selected>Country</option>\n          <option>United States</option>\n          <option>Canada</option>\n          <option>Armenia</option>\n          <option>United Kingdom</option>\n          <option>France</option>\n        </select>\n      </div>\n      <div>\n        <label for=\"city\">Your City *</label>\n        <select id=\"city\" name=\"city\" required>\n          <option value=\"\" disabled selected>City</option>\n          <option>New York</option>\n          <option>Los Angeles</option>\n          <option>Yerevan</option>\n          <option>London</option>\n          <option>Paris</option>\n        </select>\n      </div>\n\n      <div>\n        <label for=\"street_address\">Street Address *</label>\n        <input type=\"text\" id=\"street_address\" name=\"street_address\" required placeholder=\"Street address\">\n      </div>\n      <div>\n        <label for=\"postal_code\">Postal Code *</label>\n        <input type=\"text\" id=\"postal_code\" name=\"postal_code\" required placeholder=\"12456\">\n      </div>\n\n      <div class=\"full-width\">\n        <hr>\n        <label for=\"custom_country\">Country of the City *</label>\n        <select id=\"custom_country\" name=\"custom_country\" required>\n          <option value=\"\" disabled selected>United States</option>\n          <option>United States</option>\n          <option>Canada</option>\n          <option>Armenia</option>\n        </select>\n      </div>\n\n      <div class=\"full-width\">\n        <label for=\"custom_city\">City/State *</label>\n        <select id=\"custom_city\" name=\"custom_city\" required>\n          <option value=\"\" disabled selected>New York</option>\n          <option>New York</option>\n          <option>Los Angeles</option>\n          <option>Yerevan</option>\n        </select>\n      </div>\n\n      <div class=\"full-width\">\n        <label for=\"coordinates\">Select the Coordinates of the Area *</label>\n        <input type=\"text\" id=\"coordinates\" name=\"coordinates\" placeholder=\"00°00'00&quot;N , 00°00'00&quot;E\" required>\n      </div>\n\n      <div class=\"full-width\">\n        <label>Attach Related Images of the Area *</label>\n        <div class=\"file-upload-wrapper\" tabindex=\"0\">\n          <label for=\"image\" class=\"file-upload-label\">\n            Upload Image\n            <input type=\"file\" id=\"image\" name=\"image\" accept=\"image/*\" required>\n          </label>\n          <p style=\"margin-top: 8px; font-size: 0.85rem; color: #999;\">\n            Browse or drag & drop the image of related images\n          </p>\n        </div>\n      </div>\n    </div>\n\n    <button type=\"submit\">Order now for $300</button>\n  </form>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "newsletter_gnKnAU": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_HUJNPj": {
+          "type": "heading",
+          "settings": {
+            "heading": "If you want to continue fill out the form",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HUJNPj"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0 auto; text-transform: unset;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; line-height: 1.2; letter-spacing: 2px; }}"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 16
+      }
+    },
+    "custom_contact_FcTFf9": {
+      "type": "custom-contact",
+      "name": "Custom Form",
+      "settings": {
+        "form_id": "your_form_id",
+        "form_title": "Let us know the Details of your Favorite City",
+        "button_text": "Order now for $300"
+      }
+    },
+    "rich_text_fEzWpz": {
+      "type": "rich-text",
+      "blocks": {
+        "text_iCLnbR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>FAQ</p>"
+          }
+        },
+        "heading_eNx3Ch": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frequently Asked Questions - CitySculps 3D House Prints",
+            "heading_size": "h1"
+          }
+        },
+        "text_49HMDn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Find clear answers to the most common questions about CitySculps 3D House Prints. From customization options and materials to delivery times and pricing, we’ve gathered everything you need to know to make your experience simple and transparent.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_iCLnbR",
+        "heading_eNx3Ch",
+        "text_49HMDn"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 18px auto; text-transform: unset; max-width: 850px;}",
+        ".rich-text__text {margin-top: 19px; max-width: 728px; margin-inline: auto;}",
+        ".rich-text__text:first-of-type p {font-family: \"Euclid-Light\";}",
+        "p {font-family: \"Canela-light\"; font-size: 16px; letter-spacing: 0.9px;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; line-height: 1.3; letter-spacing: 3px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 40
+      }
+    },
+    "custom_faq_TTKAeT": {
+      "type": "custom-faq",
+      "blocks": {
+        "faq_main_yngejM": {
+          "type": "faq_main",
+          "settings": {
+            "main_question": "Ordering & Pricing",
+            "main_answer": "",
+            "sub_question_1": "What does a 3D house print cost?",
+            "sub_answer_1": "Our 3D house prints start at $300 USD. Final pricing depends on the size, complexity, and framing options you choose.",
+            "sub_question_2": "What sizes are available?",
+            "sub_answer_2": "We offer multiple size options to fit your space and budget. Contact us for specific dimensions and pricing details.",
+            "sub_question_3": "How long does delivery take?",
+            "sub_answer_3": "The total production and delivery time is 1-4 weeks from the moment we receive your photos and confirm your order."
+          }
+        },
+        "faq_main_nJrEWg": {
+          "type": "faq_main",
+          "settings": {
+            "main_question": "Photos & Requirements",
+            "main_answer": "What kind of photos do you need?We need high-quality, clear photos of your house's front facade taken from multiple angles. The photos should show good depth, architectural details, and the relief of the building. Natural daylight photos work best.How many photos should I send?Upload at least one main photo through our website, but we recommend sending 3-5 additional photos via email to capture all the important details and angles of your home.What if I don't have good photos of my house?If you need time to take better photos or don't currently have access to the building, consider our gift card option. This allows you to give the gift now and submit photos later.",
+            "sub_question_1": "",
+            "sub_answer_1": "",
+            "sub_question_2": "",
+            "sub_answer_2": "",
+            "sub_question_3": "",
+            "sub_answer_3": ""
+          }
+        },
+        "faq_main_6eraCq": {
+          "type": "faq_main",
+          "settings": {
+            "main_question": "Production Process",
+            "main_answer": "How do you create the 3D model?Based on your photos, our designers create a detailed digital 3D model of your house. Once you approve the design, we print it using high-quality 3D printing technology with sustainable PLA material.What material is used for printing?We use PLA (Polylactic Acid), a durable and eco-friendly material made from renewable plant-based resources. It's biodegradable and considered a sustainable alternative to traditional plastics.Can I see the design before it's printed?Yes! We'll show you the digital 3D model for your approval before we begin the printing process.",
+            "sub_question_1": "",
+            "sub_answer_1": "",
+            "sub_question_2": "",
+            "sub_answer_2": "",
+            "sub_question_3": "",
+            "sub_answer_3": ""
+          }
+        },
+        "faq_main_qbjdde": {
+          "type": "faq_main",
+          "settings": {
+            "main_question": "Customization & Details",
+            "main_answer": "What details can you capture?We can recreate architectural features like windows, doors, rooflines, porches, decorative trim, textures, and landscaping elements. The more detailed your photos, the more accurately we can reproduce these features.Can you print buildings other than houses?Absolutely! We can create 3D prints of schools, universities, vacation homes, office buildings, churches, or any special building that holds meaning for you.Do you offer framing options?Yes, we offer professional framing in elegant black frames with clean matting for larger prints. Smaller prints can be ordered without frames as standalone pieces.",
+            "sub_question_1": "",
+            "sub_answer_1": "",
+            "sub_question_2": "",
+            "sub_answer_2": "",
+            "sub_question_3": "",
+            "sub_answer_3": ""
+          }
+        },
+        "faq_main_4hK7fg": {
+          "type": "faq_main",
+          "settings": {
+            "main_question": "Shipping & Delivery",
+            "main_answer": "How is the 3D print packaged?We carefully package each 3D house print to ensure it arrives safely. Framed pieces receive extra protection during shipping.Do you ship internationally?Please contact us for international shipping options and rates.What if my 3D print arrives damaged?We take great care in packaging, but if your print arrives damaged, contact us immediately and we'll work to resolve the issue quickly.",
+            "sub_question_1": "",
+            "sub_answer_1": "",
+            "sub_question_2": "",
+            "sub_answer_2": "",
+            "sub_question_3": "",
+            "sub_answer_3": ""
+          }
+        },
+        "faq_main_9tMNRh": {
+          "type": "faq_main",
+          "settings": {
+            "main_question": "Gift Options",
+            "main_answer": "Is this a good gift idea?3D house prints make exceptional gifts for housewarmings, graduations, anniversaries, or anyone who has a special connection to a particular building. They're perfect for celebrating new homes or commemorating childhood houses.Do you offer gift certificates?Yes! Our gift cards are perfect when you want to give this unique present but need time for the recipient to provide photos. Gift cards can be delivered quickly for last-minute gifts.Can I surprise someone with their house?You can, but you'll need access to good photos of their home's facade. Make sure you can get clear, detailed photos without spoiling the surprise.",
+            "sub_question_1": "",
+            "sub_answer_1": "",
+            "sub_question_2": "",
+            "sub_answer_2": "",
+            "sub_question_3": "",
+            "sub_answer_3": ""
+          }
+        },
+        "faq_main_wDgr47": {
+          "type": "faq_main",
+          "settings": {
+            "main_question": "Other Services",
+            "main_answer": "Do you offer other types of house art?In addition to 3D prints, we also create hand-drawn illustrations of houses. Check our website for more artistic options to commemorate your special building.Have a question not listed here?Contact us directly - we're happy to discuss your specific needs and help create the perfect 3D representation of your special place.",
+            "sub_question_1": "",
+            "sub_answer_1": "",
+            "sub_question_2": "",
+            "sub_answer_2": "",
+            "sub_question_3": "",
+            "sub_answer_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_main_yngejM",
+        "faq_main_nJrEWg",
+        "faq_main_6eraCq",
+        "faq_main_qbjdde",
+        "faq_main_4hK7fg",
+        "faq_main_9tMNRh",
+        "faq_main_wDgr47"
+      ],
+      "name": "Custom FAQ",
+      "settings": {}
+    },
+    "newsletter_L69Xk3": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_xbH4EF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Happy Stories, Happy Homes",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_AikGtJ": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Every home has a story and our favorite ones are written by our clients.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xbH4EF",
+        "paragraph_AikGtJ"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.newsletter__wrapper {padding-right: 5rem; padding-left: 5rem; } .newsletter__subheading {max-width: unset; margin-top: 15px; }}",
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; text-transform: unset; text-align: left; margin-bottom: 0;}",
+        "p {font-family: \"Canela-light\"; font-size: 16px; letter-spacing: 0.9px; text-align: left;}",
+        "@media (min-width: 768px) {h2 {font-size: 30px; }}",
+        "@media (min-width: 1200px) {h2 {line-height: 1.2; letter-spacing: 2px; }}"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 44
+      }
+    },
+    "multicolumn_DkEdUQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_UUFVaq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Image_container.jpg",
+            "title": "From hunt to home",
+            "text": "<p>From hunt to home\"Emma and David dreamed of a cozy home surrounded by nature. With our help, they found the perfect match — and the process was easier than they ever imagined. ‘Stress-free and exciting,’ they say with a smile.\"<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Le4ynB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Image_container_1.jpg",
+            "title": "A dream come true",
+            "text": "<p>A dream come true\"For James, finding the right home meant a fresh start. We guided him every step of the way, and the day he held the keys, he knew it was the beginning of something great.\"<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_UUFVaq",
+        "column_Le4ynB"
+      ],
+      "custom_css": [
+        "h3 {font-family: \"Canela-regular\"; font-size: 32px; font-weight: unset;}",
+        "p {font-size: 16px;}",
+        ".multicolumn .page-width {max-width: 1365px;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_T6brey",
+    "multirow_r3MpqY",
+    "image_with_text_DWbpjJ",
+    "rich_text_cCbhr7",
+    "multicolumn_K846Dm",
+    "image_with_text_qNMh8a",
+    "image_with_text_hLiF9p",
+    "featured_collection_t6wtbg",
+    "rich_text_bPTEHh",
+    "image_banner_W6RJYm",
+    "rich_text_YHRG9t",
+    "multicolumn_kB663t",
+    "image_banner_fxacE7",
+    "newsletter_n9NKYD",
+    "multicolumn_DPKciN",
+    "multicolumn_JJhmqe",
+    "custom_liquid_Ht8RGQ",
+    "newsletter_gnKnAU",
+    "custom_contact_FcTFf9",
+    "rich_text_fEzWpz",
+    "custom_faq_TTKAeT",
+    "newsletter_L69Xk3",
+    "multicolumn_DkEdUQ"
+  ]
+}

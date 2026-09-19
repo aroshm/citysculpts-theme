@@ -1,0 +1,345 @@
+{% doc %}
+  @prompt
+    Create a responsive footer section with company information and newsletter signup that adapts beautifully between mobile and desktop layouts. The footer should have a dark background, contain "About Citysculp.com" text about a German design startup that creates 3D city models, and include a newsletter signup form. On desktop, content should be side-by-side, and on mobile, it should stack vertically with proper spacing and readability.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-footer {
+    background-color: {{ block.settings.background_color }};
+    color: {{ block.settings.text_color }};
+    padding-block: 69px 80px;
+  }
+
+  .ai-footer-container {
+    max-width: 1355px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-inline: 15px;
+  }
+
+  @media (min-width: 768px) {
+    .ai-footer-container {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .ai-footer-container {
+      
+    }
+  }
+
+  .ai-footer-about {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 90px;
+  }
+
+  .ai-footer-heading {
+    font-family: 'Canela-regular';
+    font-size: 43px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    margin: 0 0 4px;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-footer-text {
+    font-family: 'Canela-light';
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 516px;
+    opacity: 0.9;
+    letter-spacing: 0.7px;
+  }
+
+  .ai-footer-text p {
+  margin: 0;
+}
+
+  .ai-footer-newsletter {
+    display: flex;
+    flex: 1;
+    width: 100%;
+  }
+
+  .ai-footer-newsletter form {
+    width: 100%;
+  }
+
+  .ai-footer-newsletter-heading {
+    margin: 0;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-footer-newsletter-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.9;
+  }
+
+  .ai-footer-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-footer-form-field {
+    display: flex;
+  }
+
+  .ai-footer-input {
+    flex: 1;
+    font-family: 'Canela-light';
+    padding: 17px 0;
+    border: 0 none;
+    border-bottom: 1px solid {{ block.settings.input_border_color }};
+    border-radius: 0;
+    background-color: {{ block.settings.input_background_color }};
+    color: {{ block.settings.input_text_color }};
+    font-size: 14px;
+  }
+
+  .ai-footer-input::placeholder {
+    color: {{ block.settings.input_placeholder_color }};
+    opacity: 0.7;
+  }
+
+  .ai-footer-button {
+    padding: 12px 24px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    border: none;
+    border-bottom: 1px solid {{ block.settings.input_border_color }};
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .ai-footer-button:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  .ai-footer-button-icon {
+    align-items: center;
+    display: flex;
+    height: 36px;
+    width: 36px;
+  }
+
+  .ai-footer-button-icon svg path {
+    fill: {{ block.settings.input_text_color }};
+  }
+
+  .ai-footer-message {
+    font-size: 14px;
+    margin-top: 8px;}
+
+  .ai-footer-success {
+    color: {{ block.settings.success_color }};input_text_color
+  }
+
+  .ai-footer-error {
+    color: {{ block.settings.error_color }};
+  }
+
+  @media screen and (max-width: 480px) {
+    .ai-footer {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+{% endstyle %}
+ 
+<footer class="ai-footer" {{ block.shopify_attributes }}>
+  <div class="ai-footer-container">
+    <div class="ai-footer-about">
+      <h2 class="ai-footer-heading">{{ block.settings.about_heading }}</h2>
+      <div class="ai-footer-text">{{ block.settings.about_text }}</div>
+    </div>
+
+    <div class="ai-footer-newsletter">
+      {%- form 'contact' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div class="ai-footer-form-wrapper">
+          <div class="ai-footer-form-field">
+            <input
+              type="email"
+              name="contact[email]"
+              class="ai-footer-input"
+              value="{{ form.email }}"
+              placeholder="{{ block.settings.email_placeholder }}"
+              aria-required="true"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              {% if form.errors %}
+                aria-invalid="true"
+                aria-describedby="ai-footer-error"
+              {% endif %}
+              {% if form.posted_successfully? %}
+                aria-describedby="ai-footer-success"
+              {% endif %}
+              required
+            >
+            <button
+              type="submit"
+              class="ai-footer-button"
+              aria-label="Subscribe to newsletter"
+            >
+              <span class="ai-footer-button-icon">
+              {{- 'new-arrow.svg' | inline_asset_content -}}
+            </span>
+            </button>
+          </div>
+          
+          {%- if form.errors -%}
+            <div id="ai-footer-error" class="ai-footer-message ai-footer-error">
+              {{ form.errors.messages.email }}
+            </div>
+          {%- endif -%}
+          
+          {%- if form.posted_successfully? -%}
+            <div id="ai-footer-success" class="ai-footer-message ai-footer-success">
+              {{ block.settings.success_message }}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endform -%}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Company footer",
+  "settings": [
+    {
+      "type": "header",
+      "content": "About section"
+    },
+    {
+      "type": "text",
+      "id": "about_heading",
+      "label": "About heading",
+      "default": "About Citysculp.com"
+    },
+    {
+      "type": "richtext",
+      "id": "about_text",
+      "label": "About text",
+      "default": "<p>We are a German design startup specializing in creating detailed 3D city models. Our passion lies in transforming urban landscapes into stunning miniature representations that capture the essence and beauty of cities around the world.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Newsletter section"
+    },
+    {
+      "type": "text",
+      "id": "email_placeholder",
+      "label": "Email placeholder",
+      "default": "Enter your email"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "Success message",
+      "default": "Thanks for subscribing!"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Headings",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button background",
+      "default": "#007acc"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover",
+      "default": "#005a99"
+    },
+    {
+      "type": "color",
+      "id": "input_background_color",
+      "label": "Input background",
+      "default": "#2a2a2a"
+    },
+    {
+      "type": "color",
+      "id": "input_text_color",
+      "label": "Input text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "input_border_color",
+      "label": "Input border",
+      "default": "#404040"
+    },
+    {
+      "type": "color",
+      "id": "input_placeholder_color",
+      "label": "Input placeholder",
+      "default": "#888888"
+    },
+    {
+      "type": "color",
+      "id": "success_color",
+      "label": "Success message",
+      "default": "#4caf50"
+    },
+    {
+      "type": "color",
+      "id": "error_color",
+      "label": "Error message",
+      "default": "#f44336"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Company footer"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

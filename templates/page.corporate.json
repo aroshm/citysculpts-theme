@@ -1,0 +1,546 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_qEt83d": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_xj4EgX": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Story Behind City Sculps",
+            "heading_size": "h1"
+          }
+        },
+        "text_MeMFWw": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xj4EgX",
+        "text_MeMFWw"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Hero_section_images.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "newsletter_WDkfa4": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_tPizkQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Interior Design",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tPizkQ"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0; text-transform: unset;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; }}"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 44,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_NF9BPC": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Group_49.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_apwimH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mWfk7T": {
+          "type": "heading",
+          "settings": {
+            "heading": "Design solutions for offices, agencies and hospitality spaces",
+            "heading_size": "h1"
+          }
+        },
+        "text_EfYPff": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Integrate a conversation starter in the conference room, coffee tables for the lobby, or display your business locations through 3D Maps - we are here to help you find the right solutions for your spaces.</p>"
+          }
+        },
+        "button_rBKNUF": {
+          "type": "button",
+          "settings": {
+            "button_label": "View more",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mWfk7T",
+        "text_EfYPff",
+        "button_rBKNUF"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0 auto; text-transform: unset; max-width: 675px;}",
+        ".rich-text__text {margin-top: 19px; max-width: 728px; margin-inline: auto;}",
+        "p {font-family: \"Canela-light\"; font-size: 16px; letter-spacing: 0.9px;}",
+        ".button {margin-top: 8px; width: 151px; text-transform: uppercase;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; line-height: 1.2; letter-spacing: 2px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter_84rjHr": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_w7GVhM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Corporate Gifts",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_w7GVhM"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0; text-transform: unset;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; }}"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 48
+      }
+    },
+    "image_banner_FgYKd8": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Group_49_2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_ep7niy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yALmFR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to CITYSCULPS",
+            "heading_size": "h1"
+          }
+        },
+        "text_rYPjkN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With our minimalistic design approach, we provide distinctive views into the true essence of a city. Innovative production techniques are combined with high-quality, hand-processed 3D data. We are a young and passionate team dedicated to reshaping our world in new ways.<br/><br/></p>"
+          }
+        },
+        "button_3F6nNM": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yALmFR",
+        "text_rYPjkN",
+        "button_3F6nNM"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0 auto; text-transform: unset; max-width: 675px;}",
+        ".rich-text__text {margin-top: 19px; max-width: 728px; margin-inline: auto;}",
+        "p {font-family: \"Canela-light\"; font-size: 16px; letter-spacing: 0.9px;}",
+        ".rich-text__buttons {margin-top: 5px;}",
+        ".button {width: 151px; text-transform: uppercase;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; line-height: 1.2; letter-spacing: 2px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter_f79xRX": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_zjw8Yx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Become a reseller",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zjw8Yx"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0; text-transform: unset;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; }}"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 48
+      }
+    },
+    "image_banner_mENxJ7": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Group_49_3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_iV9KiD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yVBCDp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the distribution network",
+            "heading_size": "h1"
+          }
+        },
+        "text_RnAPDJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are working with a network of unique and passionate resellers and distributors around the world. Learn more about reselling CITYSCULPS 3D Models and furniture.<br/><br/></p>"
+          }
+        },
+        "button_AFq8DM": {
+          "type": "button",
+          "settings": {
+            "button_label": "View more",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yVBCDp",
+        "text_RnAPDJ",
+        "button_AFq8DM"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0 auto; text-transform: unset; max-width: 675px;}",
+        ".rich-text__text {margin-top: 19px; max-width: 728px; margin-inline: auto;}",
+        "p {font-family: \"Canela-light\"; font-size: 16px; letter-spacing: 0.9px;}",
+        ".rich-text__buttons {margin-top: 5px;}",
+        ".button {width: 151px; text-transform: uppercase;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; line-height: 1.2; letter-spacing: 2px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter_krqWib": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_CKgmdj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Brand resources",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CKgmdj"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0; text-transform: unset;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; }}"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_Qk3HFr": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Frame_1618873534.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_FqNFHJ": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gPJ8di": {
+          "type": "text",
+          "settings": {
+            "text": "<p>CATALOGS, BRAND INTRODUCTION & MORE</p>"
+          }
+        },
+        "button_znngFy": {
+          "type": "button",
+          "settings": {
+            "button_label": "BRAND RESOURCES",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_gPJ8di",
+        "button_znngFy"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0 auto; text-transform: unset; max-width: 675px;}",
+        ".rich-text__text {margin-top: 19px; max-width: 728px; margin-inline: auto;}",
+        "p {font-family: \"Canela-light\"; font-size: 16px;}",
+        ".button {margin-top: 8px; width: 190px; text-transform: uppercase;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; line-height: 1.2; letter-spacing: 2px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 60
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "slideshow_VezP6Y": {
+      "type": "slideshow",
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "featured_collection_t6wtbg": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "new-in",
+        "products_to_show": 6,
+        "title": "Bestsellers Worldwide",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_aQPpVV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_d6rrXQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Custom Models",
+            "heading_size": "h1"
+          }
+        },
+        "text_g7yKkW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A Model from any place or any building - 100% customizable<br/><br/></p>"
+          }
+        },
+        "button_WEQmPL": {
+          "type": "button",
+          "settings": {
+            "button_label": "View More",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_d6rrXQ",
+        "text_g7yKkW",
+        "button_WEQmPL"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0 auto; text-transform: unset; max-width: 675px;}",
+        ".rich-text__text {margin-top: 19px; max-width: 728px; margin-inline: auto;}",
+        "p {font-family: \"Canela-light\"; font-size: 16px; letter-spacing: 0.9px;}",
+        ".rich-text__buttons {margin-top: 4px;}",
+        ".button {width: 190px; text-transform: uppercase;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; line-height: 1.2; letter-spacing: 2px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 68,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "image_banner_qEt83d",
+    "newsletter_WDkfa4",
+    "image_banner_NF9BPC",
+    "rich_text_apwimH",
+    "newsletter_84rjHr",
+    "image_banner_FgYKd8",
+    "rich_text_ep7niy",
+    "newsletter_f79xRX",
+    "image_banner_mENxJ7",
+    "rich_text_iV9KiD",
+    "newsletter_krqWib",
+    "image_banner_Qk3HFr",
+    "rich_text_FqNFHJ",
+    "main",
+    "slideshow_VezP6Y",
+    "featured_collection_t6wtbg",
+    "rich_text_aQPpVV"
+  ]
+}

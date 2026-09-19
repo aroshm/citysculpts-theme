@@ -1,0 +1,93 @@
+{% comment %}
+  Dynamic Cities Menu
+  - Loops through All Cities collection
+  - Groups by region metafield
+  - Lists city products under each region
+{% endcomment %}
+
+<div class="cities-list-wrapper">
+  <div class="cities-list">
+    <p class="city-region">North America</p>
+    <ul>
+      {%- for product in collections['all-cities'].products -%}
+        {%- if product.metafields.custom.country_region1 == "North America" -%}
+          <li>
+            <a href="{{ product.url }}">{{ product.title }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+  <div class="cities-list">
+    <p class="city-region">South America</p>
+    <ul>
+      {%- for product in collections['all-cities'].products -%}
+        {%- if product.metafields.custom.country_region1 == "South America" -%}
+          <li>
+            <a href="{{ product.url }}">{{ product.title }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+  <div class="cities-list">
+    <p class="city-region">Europe</p>
+    <ul>
+      {%- for product in collections['all-cities'].products -%}
+        {%- if product.metafields.custom.country_region1 == "Europe" -%}
+          <li>
+            <a href="{{ product.url }}">{{ product.title }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+  <div class="cities-list">
+    <p class="city-region">Middle East</p>
+    <ul>
+      {%- for product in collections['all-cities'].products -%}
+        {%- if product.metafields.custom.country_region1 == "Middle East" -%}
+          <li>
+            <a href="{{ product.url }}">{{ product.title }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+  <div class="cities-list">
+    <p class="city-region">Africa</p>
+    <ul>
+      {%- for product in collections['all-cities'].products -%}
+        {%- if product.metafields.custom.country_region1 == "Africa" -%}
+          <li>
+            <a href="{{ product.url }}">{{ product.title }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+  <div class="cities-list">
+    <p class="city-region">Asia</p>
+    <ul>
+      {%- for product in collections['all-cities'].products -%}
+        {%- if product.metafields.custom.country_region1 == "Asia" -%}
+          <li>
+            <a href="{{ product.url }}">{{ product.title }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+  <div class="cities-list">
+    <p class="city-region">Oceania</p>
+    <ul>
+      {%- for product in collections['all-cities'].products -%}
+        {%- if product.metafields.custom.country_region1 == "Oceania" -%}
+          <li>
+            <a href="{{ product.url }}">{{ product.title }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,245 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .bundle-wrapper {
+    padding-block: 115px;
+    padding-inline: 5px;
+  }
+
+  .bundle-content-wrapper {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 24px;;
+    max-width: 860px;
+  }
+
+  .bundle-item {
+    align-items: center;
+    display: flex;
+    flex: 1 1 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bundle-item:not(:last-of-type) {
+    border-right: 1px solid #000;
+  }
+
+  .bundle-item p {
+    margin: 0;
+  }
+
+  .bundle-title {
+    font-size: 20px;
+  }
+
+  .bundle-offer {
+    color: #FFBC2D;
+    font-size: 25px;
+  }
+
+  .bundle-instruction {
+    font-family: 'Euclid-light';
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .bundle-item p {
+    margin-bottom: 5px;
+  }
+
+  .bundle-general-info {
+    font-family: 'Euclid-Light';
+    font-size: 16px;
+    margin: 0;
+    padding-inline: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: "Canela-regular";
+    font-size: 25px;
+    font-weight: unset;
+    margin: 0 0 32px;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+    font-size: 38px;
+    }
+
+    .bundle-title {
+        font-size: 28px;
+    }
+
+    .bundle-offer {
+        font-size: 32px;
+    }
+
+    .bundle-instruction,
+    .bundle-general-info {
+        font-size: 18px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    h2 {
+    font-size: 48px;
+    }
+  }
+{%- endstyle -%}
+<section class="section-{{ section.id }}-padding">
+    <div class="color-{{ section.settings.color_scheme }} bundle-wrapper">
+        <h2>{{ section.settings.heading }}</h2>
+        <div class="bundle-content-wrapper">
+            <div class="bundle-item">
+                <p class="bundle-title">{{ section.settings.bundle_one_heading }}</p>
+                <div class="bundle-offer">{{ section.settings.bundle_one_offer }}</div>
+                <p class="bundle-instruction">({{ section.settings.bundle_one_instruction }})</p>
+            </div>
+            <div class="bundle-item">
+                <p class="bundle-title">{{ section.settings.bundle_two_heading }}</p>
+                <div class="bundle-offer">{{ section.settings.bundle_two_offer }}</div>
+                <p class="bundle-instruction">({{ section.settings.bundle_two_instruction }})</p>
+            </div>
+            <div class="bundle-item">
+                <p class="bundle-title">{{ section.settings.bundle_three_heading }}</p>
+                <div class="bundle-offer">{{ section.settings.bundle_three_offer }}</div>
+                <p class="bundle-instruction">({{ section.settings.bundle_three_instruction }})</p>
+            </div>
+        </div>
+        <div class="bundle-general-info">{{ section.settings.general_info }}</div>
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Bundle Section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-2"
+    },
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Bundle Header",
+        "default": "Bundle & Save Storewide"
+    },
+    {
+      "type": "header",
+      "content": "Bundle 1"
+    },
+    {
+        "type": "text",
+        "id": "bundle_one_heading",
+        "label": "Bundle one heading",
+        "default": "Buy 3"
+    },
+    {
+        "type": "richtext",
+        "id": "bundle_one_offer",
+        "label": "Bundle one offer",
+    },
+    {
+        "type": "text",
+        "id": "bundle_one_instruction",
+        "label": "Bundle one instructions",
+        "default": "add 4 to cart",
+    },
+    {
+      "type": "header",
+      "content": "Bundle 2"
+    },
+    {
+        "type": "text",
+        "id": "bundle_two_heading",
+        "label": "Bundle two heading",
+        "default": "Buy 5"
+    },
+    {
+        "type": "richtext",
+        "id": "bundle_two_offer",
+        "label": "Bundle two offer",
+    },
+    {
+        "type": "text",
+        "id": "bundle_two_instruction",
+        "label": "Bundle two instructions",
+        "default": "add 7 to cart",
+    },
+    {
+      "type": "header",
+      "content": "Bundle 3"
+    },
+    {
+        "type": "text",
+        "id": "bundle_three_heading",
+        "label": "Bundle three heading",
+        "default": "Buy 2"
+    },
+    {
+        "type": "richtext",
+        "id": "bundle_three_offer",
+        "label": "Bundle three offer",
+    },
+    {
+        "type": "text",
+        "id": "bundle_three_instruction",
+        "label": "Bundle three instructions",
+        "default": "add 10 to cart",
+    },
+    {
+      "type": "header",
+      "content": "Info"
+    },
+    {
+        "type": "richtext",
+        "id": "general_info",
+        "label": "General info",
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle Section"
+    }
+  ]
+}
+{% endschema %}

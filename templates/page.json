@@ -1,0 +1,880 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_KRpBBn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_G8t9dN": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Aouth America</strong>",
+            "text": "<p>Asuncion</p><p>Belo Horizonte</p><p>Bogota</p><p>Brazilia</p><p>Buenos Aires</p><p>Cali</p><p>Caracas</p><p>Curitiba</p><p>Fortaleza</p><p>Guayaquil</p><p>La Paz</p><p>Lima</p><p>Medellin</p><p>Mexico City</p><p>Montevideo</p><p>Recif</p><p>Rio de Janeiro</p><p>Salvador</p><p>Santiago</p><p>Sao Paulo</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cEVgaH": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>North America</strong>",
+            "text": "<p>Boston</p><p>Chicago</p><p>Calgary</p><p>Cancun</p><p>Dallas</p><p>Guadalajara</p><p>Houston</p><p>Los Angeles</p><p>Miami</p><p>Mexico City</p><p>Monterey</p><p>Montreal</p><p>New York City</p><p>Philadelphia</p><p>Quebec City</p><p>San Francisco</p><p>Seattle</p><p>San Diego</p><p>Toronto</p><p>Vancouver</p><p></p><p></p><p></p><p></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qkFt7i": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Eourop</strong>",
+            "text": "<p>Amsterdam</p><p>Athens</p><p>Barselona</p><p>Belgrade</p><p>Berlin</p><p>Brussels</p><p>Budapest</p><p>Copenhagen</p><p>Dublin</p><p>Helsinki</p><p>Istanbul</p><p>Lisabon</p><p>London</p><p>Madrid</p><p>Milan</p><p>Moscow</p><p>Munich</p><p>Oslo</p><p>Paris</p><p>Prague</p><p>Rome</p><p>Stockholm</p><p>Vienna</p><p>Warsaw</p><p>Rome</p><p>Zurich</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jYBRCx": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Middle East</strong>",
+            "text": "<p>Abu Dhabi</p><p>Aden</p><p>Aleppo</p><p>Amman</p><p>Baghdad</p><p>Basra</p><p>Beirut</p><p>Cairo</p><p>Damascus</p><p>Doha </p><p>Dubai</p><p>Erbil</p><p>Gaziantep</p><p>Isfahan</p><p>Jeddah</p><p>Jerusalem</p><p>Kuwait city</p><p>Manama</p><p>Mashhad</p><p>Mecca</p><p>Madina</p><p>Muscat</p><p>Riyadh</p><p>Sana'a</p><p>Tehran</p><p>Tel Aviv</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JqhpbM": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Aouth America</strong>",
+            "text": "<p>Asuncion</p><p>Belo Horizonte</p><p>Bogota</p><p>Brazilia</p><p>Buenos Aires</p><p>Cali</p><p>Caracas</p><p>Curitiba</p><p>Fortaleza</p><p>Guayaquil</p><p>La Paz</p><p>Lima</p><p>Medellin</p><p>Mexico City</p><p>Montevideo</p><p>Recif</p><p>Rio de Janeiro</p><p>Salvador</p><p>Santiago</p><p>Sao Paulo</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_G8t9dN",
+        "column_cEVgaH",
+        "column_qkFt7i",
+        "column_jYBRCx",
+        "column_JqhpbM"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_EEwBCP": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_hwRiGR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Story: A Family’s Journey Through the World’s Wonders",
+            "heading_size": "h1"
+          }
+        },
+        "text_RHAHt9": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hwRiGR",
+        "text_RHAHt9"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/our_story_026fea86-412e-4fe4-a66c-78e19c76fbd0.png",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "custom_liquid_T6brey": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "OUR DIFFERENCE\nMaking behavior change simple,  beautiful and accessible.",
+        "color_scheme": "",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "multirow_r3MpqY": {
+      "type": "multirow",
+      "blocks": {
+        "row_rK6Jye": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "caption": "",
+            "heading": "A family united by wanderlust",
+            "text": "<p>At City Sculp, our love for exploration and creativity shapes who we are. As passionate travelers, we treasure discovering vibrant cities and peaceful landscapes, each journey inspiring our lives and our work.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_NYw6rd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "caption": "",
+            "heading": "Capturing the essence of cities",
+            "text": "<p>With a sharp eye for detail, we capture each city’s unique charm and character. Blending exploration with artistic expression, we create pieces that share our sense of wonder with adventurers and art lovers alike.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_FbFM6G": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "caption": "",
+            "heading": "Transforming memories into art",
+            "text": "<p>We transform our travels into tangible art, sharing the joy of discovery and the beauty of cities worldwide. Join us on this journey and bring a piece of our adventures into your space.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_rK6Jye",
+        "row_NYw6rd",
+        "row_FbFM6G"
+      ],
+      "disabled": true,
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "small",
+        "desktop_image_width": "small",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "subtitle",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_DWbpjJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_i6hQEn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Embracing the journey ahead",
+            "heading_size": "h1"
+          }
+        },
+        "text_tqYyKi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Knowing time is fleeting, we embrace every journey and creation. Each project reflects our passion for exploring, crafting, and sharing the world’s beauty one city at a time.<br/><br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_i6hQEn",
+        "text_tqYyKi"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/5.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_cCbhr7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_J9Bik3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Premium doesn't mean wasteful. We use natural, recycled, and compostable materials to protect our shared home.",
+            "heading_size": "h1"
+          }
+        },
+        "text_8dC7gp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_4rmMxz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_J9Bik3",
+        "text_8dC7gp",
+        "button_4rmMxz"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_K846Dm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JMj4gP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/7.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_czjcJh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/8.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XQL7Px": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_p9NjNx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/20.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JMj4gP",
+        "column_czjcJh",
+        "column_XQL7Px",
+        "column_p9NjNx"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Premium doesn't mean wasteful. We use natural, recycled, and compostable materials to protect our shared home.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "See Our Impact",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 16
+      }
+    },
+    "image_with_text_qNMh8a": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RYmgie": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR MISSION",
+            "heading_size": "h2"
+          }
+        },
+        "text_G4RrMM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are on a mission to help 1% of the global population create a positive change in their lives. This is only the beginning.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_zPmzbr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_RYmgie",
+        "text_G4RrMM",
+        "button_zPmzbr"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/19.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_hLiF9p": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_h699ii": {
+          "type": "heading",
+          "settings": {
+            "heading": "It's time to unleash your full potential. It's time to be part of—Intelligent Change.",
+            "heading_size": "h2"
+          }
+        },
+        "text_VV8XNf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Now is the perfect time to start living a more mindful, fulfilling life. Make the time to look after yourself, change the way you think and take notice as the world reflects those changes right back at you.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_66cbKR": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_h699ii",
+        "text_VV8XNf",
+        "button_66cbKR"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/18.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_t6wtbg": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "new-in",
+        "products_to_show": 4,
+        "title": "Bestsellers Worldwide",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_bPTEHh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UUMWmE": {
+          "type": "heading",
+          "settings": {
+            "heading": "“The art of peaceful living comes down to living compassionately and wisely.\"",
+            "heading_size": "h1"
+          }
+        },
+        "text_FEAxdj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ALLAN LOKOS<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UUMWmE",
+        "text_FEAxdj"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_eDtHGT": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/image_37_2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_LxUKmY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3mfAJ6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your City, Your Way: Introducing Custom Maps",
+            "heading_size": "h1"
+          }
+        },
+        "text_z8RGKd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With over 100 cities already in our collection, we’ve captured the charm of many iconic destinations. But perhaps you’re dreaming of something truly special—your hometown, a favorite vacation spot, or a unique neighborhood close to your heart.<br/>Now, with our Custom Maps, you can bring your own vision to life. Whether it’s a personal treasure or the perfect gift, we’ll craft a one-of-a-kind 3D map that’s as unique as your connection to the place.</p>"
+          }
+        },
+        "button_9tiLD6": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET YOUR CUSTOM DESIGN",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3mfAJ6",
+        "text_z8RGKd",
+        "button_9tiLD6"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Canela-regular\"; font-size: 23px; font-weight: unset; line-height: 1.4; margin: 0 auto; text-transform: unset; max-width: 640px;}",
+        ".rich-text__text {margin-top: 23px; margin-inline: auto;}",
+        "p {font-family: \"Canela-light\"; font-size: 16px; letter-spacing: 0.9px;}",
+        ".button {margin-top: 0; text-transform: uppercase; width: 230px;}",
+        "@media (min-width: 768px) {h2 {font-size: 35px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; letter-spacing: 2px; } .rich-text__blocks {max-width: 82rem; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 44
+      }
+    },
+    "image_banner_qAQRBV": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media (min-width: 1200px) {.banner {min-height: 105rem; }}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/image_1_d6f25a9c-cf4e-4133-a472-856e0163bc23.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "multicolumn_Bb9fEp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_jnVneq": {
+          "type": "column",
+          "settings": {
+            "title": "Step 1.",
+            "text": "<h4>Choose your city</h4><p>Pick any city or area you love and tell us what makes it special. We’ll create a map just for you.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6KKFpc": {
+          "type": "column",
+          "settings": {
+            "title": "Step 2.",
+            "text": "<h4>Share the details</h4><p>Choose the landmarks or features you love and we’ll highlight them on your map.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9wy4Fg": {
+          "type": "column",
+          "settings": {
+            "title": "Step 3.",
+            "text": "<h4>Review your design</h4><p>Once your map is ready, you’ll get a preview. Share your feedback to make sure every detail is perfect.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_jnVneq",
+        "column_6KKFpc",
+        "column_9wy4Fg"
+      ],
+      "custom_css": [
+        ".multicolumn {margin-top: -340px;}",
+        "@media (min-width: 768px) {.multicolumn {margin-top: -485px; }}",
+        ".multicolumn-list {gap: 20px;}",
+        ".multicolumn-card__info {background-color: #f3f2ee; height: 100%; padding: 18px 2.5rem;}",
+        ".multicolumn-card__info .rte {margin-top: 0 !important;}",
+        "h3,h4 {font-family: \"Canela-regular\"; font-weight: unset;}",
+        "h3 {font-size: 24px; margin: 0;}",
+        "h4 {font-size: 32px; margin-bottom: 22px;}",
+        "p {font-size: 16px; margin: 0;}",
+        "@media (min-width: 768px) {.multicolumn-list__item {flex: 1 1 0px; }}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_f8a9gM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tatQxD": {
+          "type": "column",
+          "settings": {
+            "title": "Step 4.",
+            "text": "<h4>Precision crafting</h4><p>Step 4.Precision crafting After your approval, we start 3D-printing and hand-finishing your map to ensure a result that exceeds your expectations.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9MyJnk": {
+          "type": "column",
+          "settings": {
+            "title": "Step 5.",
+            "text": "<h4>Delivered to your doorstep</h4><p>Your custom map will be ready within approximately 3 months. Quality takes time, and we promise it will be worth the wait.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_tatQxD",
+        "column_9MyJnk"
+      ],
+      "custom_css": [
+        ".multicolumn-list {gap: 20px;}",
+        ".multicolumn-card__info {background-color: #f3f2ee; height: 100%; padding: 18px 2.5rem;}",
+        ".multicolumn-card__info .rte {margin-top: 0 !important;}",
+        "h3,h4 {font-family: \"Canela-regular\"; font-weight: unset;}",
+        "h3 {font-size: 24px; margin: 0;}",
+        "h4 {font-size: 32px; margin-bottom: 22px;}",
+        "p {font-size: 16px; margin: 0;}",
+        "@media (min-width: 768px) {.multicolumn-list__item {flex: 1 1 0px; }}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_7XAJGm": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div style=\"display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 20px; max-width: 1000px; margin: 0 auto;\">\n  <!-- Image Section on the Left -->\n  <div style=\"flex: 1; text-align: center; margin-right: 20px;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0923/2059/6310/files/Image_container.png?v=1756549193\" alt=\"Image\" style=\"max-width: 100%; height: auto; border-radius: 8px;\">\n  </div>\n\n  <!-- Form Section on the Right -->\n  <div style=\"flex: 2; max-width: 600px; text-align: left; border: 1px solid #ddd; padding: 70px; background-color: #f9f9f9; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\">\n    <h3 style=\"font-size: 25px; margin-bottom: 15px;\">Customize Your 3D Corporate Gift</h3>\n    \n    <!-- Size Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"size\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">Size</label>\n      <select id=\"size\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"miniCUBE\">miniCUBE</option>\n        <option value=\"CUBE\">CUBE</option>\n      </select>\n    </div>\n\n    <!-- 3D Model Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"3dModel\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">3D Model</label>\n      <select id=\"3dModel\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"availableCity\">Available city</option>\n        <option value=\"customCity\">Custom City / Model</option>\n      </select>\n    </div>\n\n    <!-- Frame Color Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"frameColor\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">Frame Color</label>\n      <select id=\"frameColor\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"black\">Black</option>\n        <option value=\"customColor\">Custom color</option>\n      </select>\n    </div>\n\n    <!-- Engraved Plaque Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"engravedPlaque\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">Engraved Plaque</label>\n      <select id=\"engravedPlaque\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"none\">None</option>\n        <option value=\"aluminum\">Aluminum</option>\n        <option value=\"brass\">Brass</option>\n      </select>\n    </div>\n\n    <!-- Display Cover Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"displayCover\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">Display Cover</label>\n      <select id=\"displayCover\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"none\">None</option>\n        <option value=\"acrylic\">Acrylic</option>\n        <option value=\"glass\">Glass</option>\n      </select>\n    </div>\n\n    <!-- Highlighted Building Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"highlightedBuilding\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">Highlighted Building</label>\n      <select id=\"highlightedBuilding\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"none\">None</option>\n        <option value=\"customColor\">Custom color</option>\n      </select>\n    </div>\n\n    <!-- Magnetic Building Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"magneticBuilding\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">Magnetic Building</label>\n      <select id=\"magneticBuilding\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"none\">None</option>\n        <option value=\"magneticBuilding\">Magnetic building</option>\n      </select>\n    </div>\n\n    <!-- Card with Message Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"cardWithMessage\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">Card with Message</label>\n      <select id=\"cardWithMessage\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"none\">None</option>\n        <option value=\"cardWithMessage\">Card with message</option>\n      </select>\n    </div>\n\n    <!-- Packaging Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"packaging\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">Packaging</label>\n      <select id=\"packaging\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"productPackaging\">Product packaging</option>\n        <option value=\"premiumPackaging\">Premium packaging (magnetic)</option>\n      </select>\n    </div>\n\n    <!-- Branded Gift Sleeve Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"brandedGiftSleeve\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">Branded Gift Sleeve</label>\n      <select id=\"brandedGiftSleeve\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"none\">None</option>\n        <option value=\"brandedGiftSleeve\">Branded gift sleeve</option>\n      </select>\n    </div>\n\n    <!-- Graphic Design Services Dropdown -->\n    <div style=\"margin-bottom: 10px;\">\n      <label for=\"graphicDesignServices\" style=\"font-size: 16px; display: block; margin-bottom: 5px;\">Graphic Design Services</label>\n      <select id=\"graphicDesignServices\" style=\"width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc;\">\n        <option value=\"none\">None</option>\n        <option value=\"engravedPlaque\">Engraved plaque</option>\n        <option value=\"card\">Card</option>\n        <option value=\"brandedGiftSleeve\">Branded gift sleeve</option>\n      </select>\n    </div>\n\n    <div style=\"text-align: center; margin-top: 20px;\">\n      <button style=\"padding: 10px 20px; background-color: #000; color: white; border: none; cursor: pointer;\">Submit</button> \n\n    </div>\n  </div>\n</div>",
+        "color_scheme": "scheme-5",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "custom_gift_form_4HMXVn": {
+      "type": "custom-gift-form",
+      "disabled": true,
+      "name": "Custom Gift Form",
+      "settings": {
+        "heading": "Customize Your 3D Corporate Gift",
+        "button_text": "Submit"
+      }
+    },
+    "contact_form_PhTr7A": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Register for pricing, timelines, and shipping details",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 48,
+        "padding_bottom": 56
+      }
+    },
+    "multicolumn_AHwJma": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_3nTQin": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/54_BONUS_1.jpg",
+            "title": "Handcrafted with Care",
+            "text": "<p>Creating custom maps is a detailed and time-intensive process. Due to the high demand and the level of craftsmanship required, we take the time to ensure your map is nothing short of extraordinary.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nhfNkL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/54_BONUS.jpg",
+            "title": "Make It Truly Yours",
+            "text": "<p>Make It Truly YoursWith Custom Maps, the possibilities are endless. Celebrate a cherished memory, honor a special place, or give someone a truly meaningful gift. Your map isn’t just art—it’s a story, a connection, and a piece of your journey.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_3nTQin",
+        "column_nhfNkL"
+      ],
+      "custom_css": [
+        "h3 {font-family: \"Canela-regular\"; font-size: 32px; font-weight: unset;}",
+        "p {font-size: 16px;}",
+        ".multicolumn .page-width {max-width: 1365px;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 12
+      }
+    },
+    "image_with_text_EaABeJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_id34NB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ready to start?",
+            "heading_size": "h1"
+          }
+        },
+        "text_pYQpD9": {
+          "type": "text",
+          "settings": {
+            "text": "<p> Place your order today and let us bring your vision to life.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_id34NB",
+        "text_pYQpD9"
+      ],
+      "custom_css": [
+        ".image-with-text__grid {background-color: #f3f2ee; padding: 40px;}",
+        "@media (max-width: 767px) {.image-with-text__grid img {margin: 0 auto 20px; }}",
+        ".image-with-text__grid img {max-width: 226px !important;}",
+        ".image-with-text__content {padding-bottom: 0 !important;}",
+        "h2 {font-size: 23px;}",
+        "p {font-family: \"Canela-regular\"; font-size: 16px;}",
+        "@media (min-width: 768px) {.image-with-text__grid {padding: 69px 110px 56px 46px; } h2 {font-size: 35px; } p {font-size: 20px; }}",
+        "@media (min-width: 1200px) {h2 {font-size: 43px; margin-top: -8px; }}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/image_c61f22d7-1409-4d01-b2f5-abc875ab246c.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "padding_top": 100,
+        "padding_bottom": 144
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_KRpBBn",
+    "image_banner_EEwBCP",
+    "custom_liquid_T6brey",
+    "multirow_r3MpqY",
+    "image_with_text_DWbpjJ",
+    "rich_text_cCbhr7",
+    "multicolumn_K846Dm",
+    "image_with_text_qNMh8a",
+    "image_with_text_hLiF9p",
+    "featured_collection_t6wtbg",
+    "rich_text_bPTEHh",
+    "image_banner_eDtHGT",
+    "rich_text_LxUKmY",
+    "image_banner_qAQRBV",
+    "multicolumn_Bb9fEp",
+    "multicolumn_f8a9gM",
+    "custom_liquid_7XAJGm",
+    "custom_gift_form_4HMXVn",
+    "contact_form_PhTr7A",
+    "multicolumn_AHwJma",
+    "image_with_text_EaABeJ"
+  ]
+}

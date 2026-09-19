@@ -1,0 +1,282 @@
+{% doc %}
+  @prompt
+    Create a responsive testimonial section with custom Canela font that adapts beautifully to mobile devices. The section should have a decorative background, centered text layout, and proper scaling for different screen sizes. Include mobile-specific adjustments for font sizes, container dimensions, and spacing to ensure readability on all devices., font canala, change the font and take away the line in the left side, Baskervville
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-testimonial-section-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding_desktop }}px 20px;
+    background: {{ block.settings.background_color }};
+    background-image: {{ block.settings.background_gradient }};
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-testimonial-section-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 70%, {{ block.settings.decoration_color_1 | color_modify: 'alpha', 0.1 }} 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, {{ block.settings.decoration_color_2 | color_modify: 'alpha', 0.08 }} 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .ai-testimonial-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ai-testimonial-quote-{{ ai_gen_id }} {
+    font-family: {{ block.settings.quote_font.family }}, {{ block.settings.quote_font.fallback_families }};
+    font-weight: {{ block.settings.quote_font.weight }};
+    font-style: {{ block.settings.quote_font.style }};
+    font-size: {{ block.settings.quote_size_desktop }}px;
+    line-height: {{ block.settings.quote_line_height }};
+    color: {{ block.settings.quote_color }};
+    margin: 0 0 {{ block.settings.quote_margin_bottom }}px 0;
+    position: relative;
+  }
+
+  .ai-testimonial-quote-{{ ai_gen_id }}::before {
+    content: '"';
+    font-family: {{ block.settings.quote_font.family }}, {{ block.settings.quote_font.fallback_families }};
+    font-size: {{ block.settings.quote_size_desktop | times: 1.5 }}px;
+    color: {{ block.settings.decoration_color_1 }};
+    position: absolute;
+    top: -{{ block.settings.quote_size_desktop | times: 0.3 }}px;
+    left: -{{ block.settings.quote_size_desktop | times: 0.5 }}px;
+    opacity: 0.3;
+    font-weight: 700;
+  }
+
+  .ai-testimonial-quote-{{ ai_gen_id }}::after {
+    content: '"';
+    font-family: {{ block.settings.quote_font.family }}, {{ block.settings.quote_font.fallback_families }};
+    font-size: {{ block.settings.quote_size_desktop | times: 1.5 }}px;
+    color: {{ block.settings.decoration_color_1 }};
+    position: absolute;
+    bottom: -{{ block.settings.quote_size_desktop | times: 0.2 }}px;
+    right: -{{ block.settings.quote_size_desktop | times: 0.3 }}px;
+    opacity: 0.3;
+    font-weight: 700;
+  }
+
+  .ai-testimonial-author-{{ ai_gen_id }} {
+    font-family: {{ block.settings.author_font.family }}, {{ block.settings.author_font.fallback_families }};
+    font-weight: {{ block.settings.author_font.weight }};
+    font-style: {{ block.settings.author_font.style }};
+    font-size: {{ block.settings.author_size_desktop }}px;
+    color: {{ block.settings.author_color }};
+    margin: 0;
+  }
+
+  .ai-testimonial-title-{{ ai_gen_id }} {
+    font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
+    font-weight: {{ block.settings.title_font.weight }};
+    font-style: {{ block.settings.title_font.style }};
+    font-size: {{ block.settings.title_size_desktop }}px;
+    color: {{ block.settings.title_color }};
+    margin: {{ block.settings.title_margin_top }}px 0 0 0;
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-testimonial-section-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_mobile }}px 16px;
+    }
+
+    .ai-testimonial-container-{{ ai_gen_id }} {
+      max-width: 100%;
+    }
+
+    .ai-testimonial-quote-{{ ai_gen_id }} {
+      font-size: {{ block.settings.quote_size_mobile }}px;
+      margin-bottom: {{ block.settings.quote_margin_bottom | times: 0.8 }}px;
+    }
+
+    .ai-testimonial-quote-{{ ai_gen_id }}::before {
+      font-size: {{ block.settings.quote_size_mobile | times: 1.5 }}px;
+      top: -{{ block.settings.quote_size_mobile | times: 0.3 }}px;
+      left: -{{ block.settings.quote_size_mobile | times: 0.4 }}px;
+    }
+
+    .ai-testimonial-quote-{{ ai_gen_id }}::after {
+      font-size: {{ block.settings.quote_size_mobile | times: 1.5 }}px;
+      bottom: -{{ block.settings.quote_size_mobile | times: 0.2 }}px;
+      right: -{{ block.settings.quote_size_mobile | times: 0.3 }}px;
+    }
+
+    .ai-testimonial-author-{{ ai_gen_id }} {
+      font-size: {{ block.settings.author_size_mobile }}px;
+    }
+
+    .ai-testimonial-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_mobile }}px;
+      margin-top: {{ block.settings.title_margin_top | times: 0.7 }}px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .ai-testimonial-section-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_mobile | times: 0.8 }}px 12px;
+    }
+
+    .ai-testimonial-quote-{{ ai_gen_id }} {
+      font-size: {{ block.settings.quote_size_mobile | times: 0.9 }}px;
+    }
+
+    .ai-testimonial-author-{{ ai_gen_id }} {
+      font-size: {{ block.settings.author_size_mobile | times: 0.9 }}px;
+    }
+
+    .ai-testimonial-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_mobile | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-testimonial-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-testimonial-container-{{ ai_gen_id }}">
+    {% if block.settings.testimonial_quote != blank %}
+      <div class="ai-testimonial-quote-{{ ai_gen_id }}">
+        {{ block.settings.testimonial_quote }}
+      </div>
+    {% endif %}
+    
+    {% if block.settings.author_name != blank %}
+      <div class="ai-testimonial-author-{{ ai_gen_id }}">
+        {{ block.settings.author_name }}
+      </div>
+    {% endif %}
+    
+    {% if block.settings.author_title != blank %}
+      <div class="ai-testimonial-title-{{ ai_gen_id }}">
+        {{ block.settings.author_title }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Responsive testimonial",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_quote",
+      "label": "Testimonial quote",
+      "default": "This product has completely transformed my business. The quality and service are exceptional."
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Author name",
+      "default": "Sarah Johnson"
+    },
+    {
+      "type": "text",
+      "id": "author_title",
+      "label": "Author title",
+      "default": "CEO, Johnson & Co"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 400,
+      "max": 1200,
+      "step": 50,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 800
+    },
+    {
+      "type": "range",
+      "id": "section_padding_desktop",
+      "min": 20,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding desktop",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "section_padding_mobile",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding mobile",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#f8f9fa"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "quote_color",
+      "label": "Quote",
+      "default": "#2c3e50"
+    },
+    {
+      "type": "color",
+      "id": "author_color",
+      "label": "Author",
+      "default": "#34495e"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title",
+      "default": "#7f8c8d"
+    },
+    {
+      "type": "color",
+      "id": "decoration_color_1",
+      "label": "Decoration primary",
+      "default": "#3498db"
+    },
+    {
+      "type": "color",
+      "id": "decoration_color_2",
+      "label": "Decoration secondary",
+      "default": "#e74c3c"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Responsive testimonial"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

@@ -1,0 +1,286 @@
+{% doc %}
+  @prompt
+    Create a responsive testimonial section with custom Canela font that adapts beautifully to mobile devices. The section should have a decorative background, centered text layout, and proper scaling for different screen sizes. Include mobile-specific adjustments for font sizes, container dimensions, and spacing to ensure readability on all devices., take away the line in the left side, no clean the line in the left
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-testimonial-section-{{ ai_gen_id }} {
+    position: relative;
+    padding: {{ block.settings.section_padding }}px 20px;
+    background-color: {{ block.settings.background_color }};
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-testimonial-decorative-bg-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: {{ block.settings.pattern_opacity | divided_by: 100.0 }};
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .ai-testimonial-decorative-bg-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    {% if block.settings.decorative_pattern == 'dots' %}
+      background-image: radial-gradient(circle, {{ block.settings.pattern_color }} 2px, transparent 2px);background-size: 30px 30px;
+    {% elsif block.settings.decorative_pattern == 'lines' %}
+      background-image: linear-gradient(45deg, {{ block.settings.pattern_color }} 1px, transparent 1px);
+      background-size: 20px 20px;
+    {% elsif block.settings.decorative_pattern == 'grid' %}
+      background-image:
+        linear-gradient({{ block.settings.pattern_color }} 1px, transparent 1px),
+        linear-gradient(90deg, {{ block.settings.pattern_color }} 1px, transparent 1px);
+      background-size: 25px 25px;
+    {% elsif block.settings.decorative_pattern == 'waves' %}
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M020c10-10 30-10 40 0v20H0z' fill='{{ block.settings.pattern_color | remove: '#' | url_encode }}'/%3E%3C/svg%3E");
+      background-size: 40px 40px;
+    {% endif %}}
+
+  .ai-testimonial-content-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 2;
+    max-width: 830px;
+    text-align: center;
+    margin: 0 auto;
+    padding-inline: 15px;
+  }
+
+  .ai-testimonial-quote-{{ ai_gen_id }} {
+    font-family: 'Canela-regular';
+    font-size: 23px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.4;
+    margin:0 0 40px 0;
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .ai-testimonial-quote-{{ ai_gen_id }} {
+      font-size: 35px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .ai-testimonial-quote-{{ ai_gen_id }} {
+      font-size: 35px;
+    }
+  }
+
+  .ai-testimonial-quote-{{ ai_gen_id }}::before,
+  .ai-testimonial-quote-{{ ai_gen_id }}::after {
+    content: '"';
+    font-size: 1.5em;
+    color: {{ block.settings.quote_marks_color }};
+    position: relative;
+    top: -0.1em;
+  }
+
+  .ai-testimonial-author-{{ ai_gen_id }} {
+    font-family: 'Euclid-medium';
+    font-size: 12px;
+    color: {{ block.settings.author_color }};
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .ai-testimonial-title-{{ ai_gen_id }} {
+    font-family: {{ block.settings.author_font.family }}, sans-serif;
+    font-weight: {{ block.settings.author_font.weight }};
+    font-style: {{ block.settings.author_font.style }};
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: {{ block.settings.title_spacing }}px 0 0 0;
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-testimonial-section-{{ ai_gen_id }} {
+      padding: {{ block.settings.mobile_padding }}px 16px;
+      min-height: 300px;
+    }
+
+    .ai-testimonial-content-{{ ai_gen_id }} {
+      max-width: 100%;
+    }
+
+    .ai-testimonial-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_title_size }}px;
+      margin-top: {{ block.settings.mobile_title_spacing }}px;
+    }
+
+    .ai-testimonial-decorative-bg-{{ ai_gen_id }}::before {
+      {% if block.settings.decorative_pattern == 'dots' %}
+        background-size: 20px 20px;
+      {% elsif block.settings.decorative_pattern == 'lines' %}
+        background-size: 15px 15px;
+      {% elsif block.settings.decorative_pattern == 'grid' %}
+        background-size: 20px 20px;
+      {% elsif block.settings.decorative_pattern == 'waves' %}
+        background-size: 30px 30px;
+      {% endif %}
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .ai-testimonial-section-{{ ai_gen_id }} {
+      padding: {{ block.settings.mobile_padding | times: 0.8}}px 12px;
+    }
+
+    .ai-testimonial-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_title_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}<div class="ai-testimonial-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-testimonial-decorative-bg-{{ ai_gen_id }}"></div>
+  
+  <div class="ai-testimonial-content-{{ ai_gen_id }}">
+    {% if block.settings.testimonial_text != blank %}
+      <div class="ai-testimonial-quote-{{ ai_gen_id }}">
+        {{ block.settings.testimonial_text }}
+      </div>
+    {% endif %}
+    
+    {% if block.settings.author_name != blank %}
+      <div class="ai-testimonial-author-{{ ai_gen_id }}">
+        {{ block.settings.author_name }}
+      </div>
+    {% endif %}
+    
+    {% if block.settings.author_title != blank %}
+      <div class="ai-testimonial-title-{{ ai_gen_id }}">
+        {{ block.settings.author_title }}
+      </div>
+    {% endif %}</div>
+</div>
+
+{% schema %}
+{
+  "name": "Responsive testimonial",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_text",
+      "label": "Testimonial text",
+      "default": "This product has completely transformed my daily routine. The quality is exceptional and the customer service is outstanding."
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Author name",
+      "default": "Sarah Johnson"
+    },
+    {
+      "type": "text",
+      "id": "author_title",
+      "label": "Author title",
+      "default": "Verified Customer"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Quote text",
+      "default": "#2c2c2c"
+    },
+    {
+      "type": "color",
+      "id": "author_color",
+      "label": "Author",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "quote_marks_color",
+      "label": "Quote marks",
+      "default": "#cccccc"
+    },
+    {
+      "type": "header",
+      "content": "Decorative pattern"
+    },
+    {
+      "type": "select",
+      "id": "decorative_pattern",
+      "label": "Pattern type",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "dots",
+          "label": "Dots"
+        },
+        {
+          "value": "lines",
+          "label": "Lines"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "waves",
+          "label": "Waves"
+        }
+      ],
+      "default": "dots"
+    },
+    {
+      "type": "color",
+      "id": "pattern_color",
+      "label": "Pattern color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "pattern_opacity",
+      "min": 10,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Pattern opacity",
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "Responsive testimonial"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

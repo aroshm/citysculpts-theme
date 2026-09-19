@@ -1,0 +1,229 @@
+{% schema %}
+{
+  "name": "FAQ Section",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "faq_main",
+      "name": "Main FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "main_question",
+          "label": "Main Question"
+        },
+        {
+          "type": "richtext",
+          "id": "main_answer",
+          "label": "Main Answer"
+        },
+        {
+          "type": "header",
+          "content": "Sub Questions"
+        },
+        {
+          "type": "text",
+          "id": "sub_question_1",
+          "label": "Sub Question 1"
+        },
+        {
+          "type": "richtext",
+          "id": "sub_answer_1",
+          "label": "Sub Answer 1"
+        },
+        {
+          "type": "text",
+          "id": "sub_question_2",
+          "label": "Sub Question 2"
+        },
+        {
+          "type": "richtext",
+          "id": "sub_answer_2",
+          "label": "Sub Answer 2"
+        },
+        {
+          "type": "text",
+          "id": "sub_question_3",
+          "label": "Sub Question 3"
+        },
+        {
+          "type": "richtext",
+          "id": "sub_answer_3",
+          "label": "Sub Answer 3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Section"
+    }
+  ]
+}
+
+{% endschema %}
+
+<div class="faq-section">
+  {% for block in section.blocks %}
+    {% if block.type == 'faq_main' %}
+      <div class="faq-main">
+        <button class="faq-toggle">
+          {{ block.settings.main_question }}
+          <span class="svg-wrapper">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+        </button>
+        <div class="faq-answer">
+          <p>{{ block.settings.main_answer }}</p>
+
+          {% assign sub_count = 3 %}
+          <div class="faq-sub-list">
+            {% for i in (1..sub_count) %}
+              {% assign sub_q_id = 'sub_question_' | append: i %}
+              {% assign sub_a_id = 'sub_answer_' | append: i %}
+              {% assign sub_q = block.settings[sub_q_id] %}
+              {% assign sub_a = block.settings[sub_a_id] %}
+
+              {% if sub_q != blank and sub_a != blank %}
+                <div class="faq-sub">
+                  <button class="faq-sub-toggle">
+                    {{ sub_q }}
+                    <span class="svg-wrapper">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+                  </button>
+                  <div class="faq-sub-answer">
+                    <p>{{ sub_a }}</p>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Handle main FAQ toggle
+  document.querySelectorAll(".faq-toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const parent = btn.closest(".faq-main");
+
+      // close siblings
+      document.querySelectorAll(".faq-main").forEach(f => {
+        if (f !== parent) f.classList.remove("active");
+      });
+
+      parent.classList.toggle("active");
+    });
+  });
+
+  // Handle sub FAQ toggle
+  document.querySelectorAll(".faq-sub-toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const parent = btn.closest(".faq-sub");
+
+      // close siblings inside same faq-main
+      parent.parentElement.querySelectorAll(".faq-sub").forEach(s => {
+        if (s !== parent) s.classList.remove("active");
+      });
+
+      parent.classList.toggle("active");
+    });
+  });
+});
+
+</script>
+
+<style>
+.faq-section {
+  max-width: 95%;
+  margin: 26px auto 0;
+}
+
+@media (min-width: 992px) {
+  .faq-section {
+    max-width: 918px;
+  }
+}
+
+.faq-toggle,
+.faq-sub-toggle {
+    font-family: "Canela-regular";
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-weight: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-toggle {
+    background-color: #F3F2EE;
+    font-size: 20px;
+    padding: 13.5px 34px 13.5px 24px;
+}
+
+.faq-sub-toggle {
+    background-color: transparent;
+font-size: 18px;
+padding: 11px 27px 12px 21px;
+}
+
+.faq-answer,
+.faq-sub-answer {
+  display: none;
+  background: #fff;
+}
+
+.faq-answer {
+    padding: 5px;
+}
+
+.faq-answer p {
+color: #393230;
+    font-size: 16px;
+    margin: 0;
+}
+
+.faq-sub-answer {
+    border-bottom: 1px solid #F3F2EE;
+    padding: 12px 24px 18px;
+}
+
+.faq-sub-answer p {
+    color: #393230;
+    font-size: 16px;
+    margin: 0;
+}
+
+.faq-main.active > .faq-answer {
+  display: block;
+}
+
+.faq-sub.active > .faq-sub-answer {
+  display: block;
+}
+
+.svg-wrapper {
+  transition: transform 0.3s;
+  width: 10px;
+}
+
+.faq-main.active .faq-toggle .svg-wrapper,
+.faq-sub.active .faq-sub-toggle .svg-wrapper {
+  transform: rotate(-180deg);
+}
+
+.faq-main:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+</style>

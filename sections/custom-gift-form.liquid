@@ -1,0 +1,446 @@
+{% comment %}
+  Custom Gift Form Section
+  - Place on any page template
+  - Live preview image updates from uploaded image mappings (blocks) or default image
+  - Submits as Shopify contact form
+  - Merchant: add mapping blocks with a "map_key" text (see README below)
+{% endcomment %}
+
+<section id="custom-gift-form-{{ section.id }}" class="custom-gift-form section">
+  <div class="custom-gift-form__wrap page-width">
+    <div class="custom-gift-form__media">
+      {%- if section.settings.default_preview_image != blank -%}
+        <img id="cgf-preview-{{ section.id }}"
+             src="{{ section.settings.default_preview_image | image_url: width: 1200 }}"
+             alt="Preview"
+             loading="lazy"
+             class="custom-gift-form__preview-img" />
+      {%- else -%}
+        <div class="custom-gift-form__preview-empty">Upload preview image in the section settings</div>
+      {%- endif -%}
+    </div>
+
+    <div class="custom-gift-form__form">
+      {% if section.settings.heading != blank %}
+        <h2 class="custom-gift-form__heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+
+      {% form 'contact', id: 'custom-gift-form-contact-{{ section.id }}' %}
+        {%- if form.errors %}
+          <div class="form-errors">
+            {{ form.errors | default_errors }}
+          </div>
+        {%- endif %}
+
+        {%- if form.posted_successfully? %}
+          <p class="form-success">Thanks — your customization request has been submitted.</p>
+        {%- endif %}
+
+        <input type="hidden" name="contact[subject]" value="Custom Gift Request">
+        <input type="hidden" name="contact[tags]" value="custom-gift">
+        <!-- hidden field that will contain a readable summary for email body -->
+        <input type="hidden" name="contact[body]" id="cgf-body-{{ section.id }}">
+
+        <!-- Size -->
+        <div class="cgf-field">
+          <label class="cgf-label">Size <span class="cgf-tip" title="Pick the size of the model.">ℹ</span></label>
+          <div class="cgf-options" data-field="size">
+            <button type="button" class="cgf-option" data-value="miniCUBE">miniCUBE</button>
+            <button type="button" class="cgf-option" data-value="CUBE">CUBE</button>
+          </div>
+        </div>
+
+        <!-- 3D Model (city) -->
+        <div class="cgf-field">
+          <label class="cgf-label">3D Model <span class="cgf-tip" title="Choose an available city or request a custom model.">ℹ</span></label>
+          <div class="cgf-options" data-field="model">
+            <button type="button" class="cgf-option" data-value="availableCity">Available city</button>
+            <button type="button" class="cgf-option cgf-option--disabled" disabled data-value="customCity">Custom City / Model</button>
+          </div>
+        </div>
+
+        <!-- Frame color -->
+        <div class="cgf-field">
+          <label class="cgf-label">Frame color <span class="cgf-tip" title="Pick a frame color or choose custom to pick any color.">ℹ</span></label>
+          <div class="cgf-options" data-field="frameColor">
+            <button type="button" class="cgf-option" data-value="black">Black</button>
+            <button type="button" class="cgf-option" data-value="customColor">Custom color</button>
+            <input type="color" id="cgf-framecolor-{{ section.id }}" class="cgf-colorpicker" value="#2b2bff" title="Choose custom color" style="margin-left:8px;">
+            <span class="cgf-color-swatch" id="cgf-framecolor-swatch-{{ section.id }}"></span>
+          </div>
+        </div>
+
+        <!-- Engraved plaque -->
+        <div class="cgf-field">
+          <label class="cgf-label">Engraved plaque <span class="cgf-tip" title="Choose a plaque material.">ℹ</span></label>
+          <div class="cgf-options" data-field="engravedPlaque">
+            <button type="button" class="cgf-option" data-value="none">(none)</button>
+            <button type="button" class="cgf-option" data-value="aluminum">Aluminum</button>
+            <button type="button" class="cgf-option" data-value="brass">Brass</button>
+          </div>
+        </div>
+
+        <!-- Display cover -->
+        <div class="cgf-field">
+          <label class="cgf-label">Display cover <span class="cgf-tip" title="Add a display cover: acrylic or glass.">ℹ</span></label>
+          <div class="cgf-options" data-field="displayCover">
+            <button type="button" class="cgf-option" data-value="none">(none)</button>
+            <button type="button" class="cgf-option" data-value="acrylic">Acrylic</button>
+            <button type="button" class="cgf-option" data-value="glass">Glass</button>
+          </div>
+        </div>
+
+        <!-- Highlighted building (color) -->
+        <div class="cgf-field">
+          <label class="cgf-label">Highlighted building <span class="cgf-tip" title="Pick a color to highlight a building; or choose none.">ℹ</span></label>
+          <div class="cgf-options" data-field="highlightedBuilding">
+            <button type="button" class="cgf-option" data-value="none">(none)</button>
+            <button type="button" class="cgf-option" data-value="customColor">Custom color</button>
+            <input type="color" id="cgf-highlightcolor-{{ section.id }}" class="cgf-colorpicker" value="#ff00aa" style="margin-left:8px;">
+            <span class="cgf-color-swatch" id="cgf-highlightcolor-swatch-{{ section.id }}"></span>
+          </div>
+        </div>
+
+        <!-- Magnetic building -->
+        <div class="cgf-field">
+          <label class="cgf-label">Magnetic building <span class="cgf-tip" title="Add a magnetic building element.">ℹ</span></label>
+          <div class="cgf-options" data-field="magneticBuilding">
+            <button type="button" class="cgf-option" data-value="none">(none)</button>
+            <button type="button" class="cgf-option cgf-option--disabled" disabled data-value="magneticBuilding">Magnetic building</button>
+          </div>
+        </div>
+
+        <!-- Card with message -->
+        <div class="cgf-field">
+          <label class="cgf-label">Card with message <span class="cgf-tip" title="Add a printed card message.">ℹ</span></label>
+          <div class="cgf-options" data-field="cardWithMessage">
+            <button type="button" class="cgf-option" data-value="none">(none)</button>
+            <button type="button" class="cgf-option" data-value="cardWithMessage">Card with message</button>
+          </div>
+        </div>
+
+        <!-- Packaging -->
+        <div class="cgf-field">
+          <label class="cgf-label">Packaging <span class="cgf-tip" title="Choose packaging style.">ℹ</span></label>
+          <div class="cgf-options" data-field="packaging">
+            <button type="button" class="cgf-option" data-value="productPackaging">Product packaging</button>
+            <button type="button" class="cgf-option" data-value="premiumPackaging">Premium packaging (magnetic)</button>
+          </div>
+        </div>
+
+        <!-- Branded gift sleeve -->
+        <div class="cgf-field">
+          <label class="cgf-label">Branded gift sleeve <span class="cgf-tip" title="Add branded sleeve.">ℹ</span></label>
+          <div class="cgf-options" data-field="brandedGiftSleeve">
+            <button type="button" class="cgf-option" data-value="none">(none)</button>
+            <button type="button" class="cgf-option" data-value="brandedGiftSleeve">Branded gift sleeve</button>
+          </div>
+        </div>
+
+        <!-- Graphic design services -->
+        <div class="cgf-field">
+          <label class="cgf-label">Graphic design services <span class="cgf-tip" title="Add graphic services like engraved plaque or card design.">ℹ</span></label>
+          <div class="cgf-options" data-field="graphicDesignServices">
+            <button type="button" class="cgf-option" data-value="none">(none)</button>
+            <button type="button" class="cgf-option" data-value="engravedPlaque">Engraved plaque</button>
+            <button type="button" class="cgf-option" data-value="card">Card</button>
+            <button type="button" class="cgf-option" data-value="brandedGiftSleeve">Branded gift sleeve</button>
+          </div>
+        </div>
+
+        <!-- Optional customer info to contact back -->
+        <div class="cgf-field">
+          <label class="cgf-label">Your name</label>
+          <input type="text" name="contact[name]" placeholder="Full name" />
+        </div>
+
+        <div class="cgf-field">
+          <label class="cgf-label">Your email</label>
+          <input type="email" name="contact[email]" placeholder="name@example.com" required />
+        </div>
+
+        <div class="cgf-field">
+          <label class="cgf-label">Phone (optional)</label>
+          <input type="tel" name="contact[phone]" placeholder="+1 555 555 5555" />
+        </div>
+
+        <div class="cgf-field">
+          <label class="cgf-label">Notes (optional)</label>
+          <textarea name="contact[note]" rows="3" placeholder="Any extra details"></textarea>
+        </div>
+
+        <div class="cgf-field cgf-field--submit">
+          <button type="submit" class="btn">{{ section.settings.button_text }}</button>
+        </div>
+
+      {% endform %}
+    </div>
+  </div>
+
+  <!-- Mapping blocks: merchant can add many mapping blocks. Each block: map_key + image -->
+  <div style="display:none;">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'preview_image' -%}
+        <img class="cgf-mapping-image"
+             data-map-key="{{ block.settings.map_key | downcase | strip }}"
+             src="{{ block.settings.image | image_url: width: 1200 }}"
+             alt="{{ block.settings.map_key }}">
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+
+  <style>
+    /* Basic styles - you can tweak these to match theme */
+    .custom-gift-form__wrap { display:flex; gap:32px; align-items:flex-start; padding:30px 0; flex-wrap:wrap; }
+    .custom-gift-form__media { flex:1 1 360px; text-align:center; }
+    .custom-gift-form__preview-img { width:100%; max-width:420px; border-radius:6px; border:1px solid #eee; display:block; margin:0 auto; }
+    .custom-gift-form__form { flex:1 1 420px; min-width:320px; }
+    .custom-gift-form__heading { font-size:22px; margin-bottom:18px; }
+    .cgf-field { margin-bottom:14px; }
+    .cgf-label { display:block; font-weight:600; margin-bottom:6px; }
+    .cgf-options { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+    .cgf-option { padding:8px 12px; border-radius:8px; border:1px solid #ddd; background:#f8f8f8; cursor:pointer; }
+    .cgf-option:hover { background:#eee; }
+    .cgf-option--active { background:#111; color:#fff; border-color:#111; }
+    .cgf-option--disabled { opacity:0.5; cursor:not-allowed; }
+    .cgf-colorpicker { border:none; width:36px; height:28px; padding:2px; }
+    .cgf-color-swatch { display:inline-block; width:14px; height:14px; border-radius:2px; border:1px solid #ddd; vertical-align:middle; margin-left:6px; }
+    .btn { background:#000; color:#fff; border:none; padding:10px 18px; border-radius:6px; cursor:pointer; }
+    .form-success { color:green; margin-bottom:10px; }
+    .form-errors { color:#b00020; margin-bottom:10px; }
+    @media (max-width:900px) {
+      .custom-gift-form__wrap { flex-direction:column; align-items:stretch; }
+      .custom-gift-form__media, .custom-gift-form__form { width:100%; }
+    }
+  </style>
+
+  <script>
+  (() => {
+    const sid = "{{ section.id }}";
+    const root = document.getElementById('custom-gift-form-' + sid);
+    if (!root) return;
+
+    // Read mapping images (rendered in hidden DOM)
+    const mappingEls = root.querySelectorAll('.cgf-mapping-image');
+    const mappings = {}; // map_key => src
+    mappingEls.forEach(img => {
+      const key = img.dataset.mapKey && img.dataset.mapKey.trim().toLowerCase();
+      if (key) mappings[key] = img.src;
+    });
+
+    const preview = root.querySelector('#cgf-preview-' + sid);
+    const bodyInput = root.querySelector('#cgf-body-' + sid);
+
+    // option defaults
+    const state = {
+      size: 'miniCUBE',
+      model: 'availableCity',
+      frameColor: 'black',
+      frameColorHex: '#2b2bff',
+      engravedPlaque: 'none',
+      displayCover: 'none',
+      highlightedBuilding: 'none',
+      highlightedBuildingHex: '#ff00aa',
+      magneticBuilding: 'none',
+      cardWithMessage: 'none',
+      packaging: 'productPackaging',
+      brandedGiftSleeve: 'none',
+      graphicDesignServices: 'none'
+    };
+
+    // helpers
+    const setActiveOption = (container, value) => {
+      container.querySelectorAll('.cgf-option').forEach(btn => {
+        btn.classList.toggle('cgf-option--active', btn.dataset.value === value);
+      });
+    };
+
+    // build key: join values with underscores (lowercase)
+    const buildMapKey = () => {
+      // standard order for keys: size_model_frame_engraveddPlaque_displayCover_highlighted_magnetic_card_packaging_sleeve_graphic
+      const arr = [
+        state.size, state.model, state.frameColor, state.engravedPlaque,
+        state.displayCover, state.highlightedBuilding, state.magneticBuilding,
+        state.cardWithMessage, state.packaging, state.brandedGiftSleeve, state.graphicDesignServices
+      ];
+      return arr.map(s => (s||'none').toString().toLowerCase()).join('_');
+    };
+
+    // attempt to set preview image by full match, then partial fallback
+    const updatePreview = () => {
+      if (!preview) return;
+      const key = buildMapKey();
+      // full match
+      if (mappings[key]) {
+        preview.src = mappings[key];
+        return;
+      }
+      // try partial match: progressively remove trailing tokens to find a mapping
+      const tokens = key.split('_');
+      for (let len = tokens.length - 1; len >= 1; len--) {
+        const subKey = tokens.slice(0, len).join('_');
+        if (mappings[subKey]) { preview.src = mappings[subKey]; return; }
+      }
+      // fallback to default image (already set in DOM)
+      // nothing else to do
+    };
+
+    // update body hidden input for email
+    const updateBodyInput = () => {
+      if (!bodyInput) return;
+      const lines = [];
+      lines.push('Customization request from page: ' + window.location.href);
+      lines.push('Size: ' + state.size);
+      lines.push('Model: ' + state.model);
+      lines.push('Frame color: ' + state.frameColor + (state.frameColor === 'customColor' ? ' (' + state.frameColorHex + ')' : ''));
+      lines.push('Engraved plaque: ' + state.engravedPlaque);
+      lines.push('Display cover: ' + state.displayCover);
+      lines.push('Highlighted building: ' + state.highlightedBuilding + (state.highlightedBuilding === 'customColor' ? ' ('+ state.highlightedBuildingHex +')':''));
+      lines.push('Magnetic building: ' + state.magneticBuilding);
+      lines.push('Card with message: ' + state.cardWithMessage);
+      lines.push('Packaging: ' + state.packaging);
+      lines.push('Branded gift sleeve: ' + state.brandedGiftSleeve);
+      lines.push('Graphic design services: ' + state.graphicDesignServices);
+      // include text fields if present
+      const name = root.querySelector('input[name="contact[name]"]')?.value || '';
+      const email = root.querySelector('input[name="contact[email]"]')?.value || '';
+      const phone = root.querySelector('input[name="contact[phone]"]')?.value || '';
+      const note = root.querySelector('textarea[name="contact[note]"]')?.value || '';
+      lines.push('');
+      lines.push('Customer details:');
+      lines.push('Name: ' + name);
+      lines.push('Email: ' + email);
+      lines.push('Phone: ' + phone);
+      lines.push('Notes: ' + note);
+      bodyInput.value = lines.join('\n');
+    };
+
+    // wire up option groups
+    root.querySelectorAll('.cgf-options').forEach(group => {
+      const field = group.dataset.field;
+      group.addEventListener('click', e => {
+        const btn = e.target.closest('.cgf-option');
+        if (!btn || btn.classList.contains('cgf-option--disabled')) return;
+        const val = btn.dataset.value;
+        // update state
+        if (field === 'size') state.size = val;
+        else if (field === 'model') state.model = val;
+        else if (field === 'frameColor') state.frameColor = val;
+        else if (field === 'engravedPlaque') state.engravedPlaque = val;
+        else if (field === 'displayCover') state.displayCover = val;
+        else if (field === 'highlightedBuilding') state.highlightedBuilding = val;
+        else if (field === 'magneticBuilding') state.magneticBuilding = val;
+        else if (field === 'cardWithMessage') state.cardWithMessage = val;
+        else if (field === 'packaging') state.packaging = val;
+        else if (field === 'brandedGiftSleeve') state.brandedGiftSleeve = val;
+        else if (field === 'graphicDesignServices') state.graphicDesignServices = val;
+
+        setActiveOption(group, val);
+        updatePreview();
+        updateBodyInput();
+      });
+    });
+
+    // colorpickers
+    const framePicker = root.querySelector('#cgf-framecolor-{{ section.id }}');
+    const frameSwatch = root.querySelector('#cgf-framecolor-swatch-{{ section.id }}');
+    if (framePicker) {
+      framePicker.addEventListener('input', (e) => {
+        state.frameColorHex = e.target.value;
+        if (state.frameColor === 'customColor') {
+          // for mapping keys we keep placeholder 'customcolor'
+          state.frameColor = 'customColor';
+        }
+        if (frameSwatch) frameSwatch.style.background = state.frameColorHex;
+        updatePreview();
+        updateBodyInput();
+      });
+      // init swatch
+      if (frameSwatch) frameSwatch.style.background = framePicker.value;
+    }
+
+    const highlightPicker = root.querySelector('#cgf-highlightcolor-{{ section.id }}');
+    const highlightSwatch = root.querySelector('#cgf-highlightcolor-swatch-{{ section.id }}');
+    if (highlightPicker) {
+      highlightPicker.addEventListener('input', (e) => {
+        state.highlightedBuildingHex = e.target.value;
+        if (state.highlightedBuilding === 'customColor') {
+          state.highlightedBuilding = 'customColor';
+        }
+        if (highlightSwatch) highlightSwatch.style.background = state.highlightedBuildingHex;
+        updatePreview();
+        updateBodyInput();
+      });
+      if (highlightSwatch) highlightSwatch.style.background = highlightPicker.value;
+    }
+
+    // initialize UI active states from defaults
+    root.querySelectorAll('.cgf-options').forEach(g => {
+      const field = g.dataset.field;
+      const val = state[field] || null;
+      if (val) setActiveOption(g, val);
+    });
+    updatePreview();
+    updateBodyInput();
+
+    // submit: ensure body summary is up-to-date
+    const formEl = root.querySelector('form');
+    if (formEl) {
+      formEl.addEventListener('submit', () => {
+        updateBodyInput();
+      });
+    }
+  })();
+  </script>
+
+</section>
+
+{% schema %}
+{
+  "name": "Custom Gift Request",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "default_preview_image",
+      "label": "Default preview image (used when no mapping found)"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Customize Your 3D Corporate Gift"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Submit button text",
+      "default": "Submit"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "preview_image",
+      "name": "Preview image mapping",
+      "settings": [
+        {
+          "type": "text",
+          "id": "map_key",
+          "label": "Map key",
+          "info": "Lowercase key that matches the JavaScript map key. Example: minicube_availablecity_black_none_none_none_none_none_none_none_none"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Preview image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Gift Request (page)",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

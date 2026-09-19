@@ -1,0 +1,101 @@
+{% comment %}
+  Custom Menus Section
+  Lets you add a block with a menu selector.
+{% endcomment %}
+
+{% style %}
+  .custom-menus {
+    border-bottom: 1px solid #8F8F8F;
+    padding: 32px 5px;
+  }
+
+  .custom-menu {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .custom-menu__list {
+    align-items: center;
+    display: flex;
+    font-family: 'Euclid-semibold';
+    font-size: 11px;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  .custom-menu__list a {
+    color: var(--color-foreground);
+    text-decoration: none;
+  }
+
+  .custom-menu__list a:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 768px) {
+    .custom-menu__list {
+        gap: 50px;
+    }
+  }
+{% endstyle %}
+
+<div class="custom-menus">
+  {% for block in section.blocks %}
+    {% if block.type == 'menu_block' and block.settings.menu != blank %}
+      <div class="custom-menu" {{ block.shopify_attributes }}>
+        
+        {%- if block.settings.heading != blank -%}
+          <h3 class="custom-menu__heading">{{ block.settings.heading }}</h3>
+        {%- endif -%}
+
+        <ul class="custom-menu__list">
+          {% for link in linklists[block.settings.menu].links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+
+              {% if link.links != blank %}
+                <ul class="custom-menu__sublist">
+                  {% for childlink in link.links %}
+                    <li>
+                      <a href="{{ childlink.url }}">{{ childlink.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Custom Menus",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "menu_block",
+      "name": "Menu Block",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Select Menu"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Menus",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
